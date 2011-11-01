@@ -54,8 +54,8 @@
 		A452945A145FAF7000A214A5 /* NYUXibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUXibViewController.h; sourceTree = "<group>"; };
 		A452945B145FAF7000A214A5 /* NYUXibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUXibViewController.m; sourceTree = "<group>"; };
 		A452945C145FAF7000A214A5 /* NYUXibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NYUXibViewController.xib; sourceTree = "<group>"; };
-		A4529460145FB00800A214A5 /* NYUViewX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUViewX.h; sourceTree = "<group>"; };
-		A4529461145FB00800A214A5 /* NYUViewX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUViewX.m; sourceTree = "<group>"; };
+		A4529460145FB00800A214A5 /* NYUViewX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NYUViewX.h; path = ../NYUViewX.h; sourceTree = "<group>"; };
+		A4529461145FB00800A214A5 /* NYUViewX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NYUViewX.m; path = ../NYUViewX.m; sourceTree = "<group>"; };
 		A499F5B61458FA63001020A2 /* NYU-IOS2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NYU-IOS2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A499F5BA1458FA63001020A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A499F5BC1458FA63001020A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -109,8 +109,6 @@
 				A417F9121459207500B1C535 /* Default@2x.png */,
 				A499F5EE1458FD94001020A2 /* Icon@2x.png */,
 				A499F5EC1458FD86001020A2 /* Icon.png */,
-				A4529460145FB00800A214A5 /* NYUViewX.h */,
-				A4529461145FB00800A214A5 /* NYUViewX.m */,
 				A499F62B14590574001020A2 /* NYUDate */,
 				A499F5C01458FA63001020A2 /* NYU-IOS2 */,
 				A499F5B91458FA63001020A2 /* Frameworks */,
@@ -140,6 +138,14 @@
 		A499F5C01458FA63001020A2 /* NYU-IOS2 */ = {
 			isa = PBXGroup;
 			children = (
+				A4529460145FB00800A214A5 /* NYUViewX.h */,
+				A4529461145FB00800A214A5 /* NYUViewX.m */,
+				A417F90F1459132D00B1C535 /* NYUViewD.h */,
+				A417F9101459132D00B1C535 /* NYUViewD.m */,
+				A499F5F214590518001020A2 /* NYUViewT.h */,
+				A499F5F314590518001020A2 /* NYUViewT.m */,
+				A417F931145B90F200B1C535 /* NYUviewA.h */,
+				A417F932145B90F200B1C535 /* NYUviewA.m */,
 				A499F5C91458FA63001020A2 /* NYUAppDelegate.h */,
 				A499F5CA1458FA63001020A2 /* NYUAppDelegate.m */,
 				A452945A145FAF7000A214A5 /* NYUXibViewController.h */,
@@ -147,12 +153,6 @@
 				A452945C145FAF7000A214A5 /* NYUXibViewController.xib */,
 				A499F5CC1458FA63001020A2 /* NYUFirstViewController.h */,
 				A499F5CD1458FA63001020A2 /* NYUFirstViewController.m */,
-				A417F90F1459132D00B1C535 /* NYUViewD.h */,
-				A417F9101459132D00B1C535 /* NYUViewD.m */,
-				A499F5F214590518001020A2 /* NYUViewT.h */,
-				A499F5F314590518001020A2 /* NYUViewT.m */,
-				A417F931145B90F200B1C535 /* NYUviewA.h */,
-				A417F932145B90F200B1C535 /* NYUviewA.m */,
 				A499F5D31458FA63001020A2 /* NYUSecondViewController.h */,
 				A499F5D41458FA63001020A2 /* NYUSecondViewController.m */,
 				A417F9161459970700B1C535 /* NYUThirdViewController.h */,
