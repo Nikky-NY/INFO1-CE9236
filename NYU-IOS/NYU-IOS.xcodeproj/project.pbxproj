@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4C819271450EF6500C75155 /* NYULittleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C819261450EF6500C75155 /* NYULittleView.m */; };
+		A4C8192A1450FB5900C75155 /* Paton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4C819291450FB5900C75155 /* Paton.jpg */; };
+		A4EEE27814468384008EF067 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EEE27714468384008EF067 /* UIKit.framework */; };
+		A4EEE27A14468384008EF067 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EEE27914468384008EF067 /* Foundation.framework */; };
+		A4EEE27C14468384008EF067 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EEE27B14468384008EF067 /* CoreGraphics.framework */; };
+		A4EEE28214468384008EF067 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4EEE28014468384008EF067 /* InfoPlist.strings */; };
+		A4EEE28414468384008EF067 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EEE28314468384008EF067 /* main.m */; };
+		A4EEE28814468384008EF067 /* NYUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EEE28714468384008EF067 /* NYUAppDelegate.m */; };
+		A4EEE28F144683E0008EF067 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A4EEE28E144683E0008EF067 /* Icon.png */; };
+		A4EEE291144683E5008EF067 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4EEE290144683E5008EF067 /* Icon@2x.png */; };
+		A4EEE293144683EC008EF067 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A4EEE292144683EC008EF067 /* Default.png */; };
+		A4EEE295144683F1008EF067 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4EEE294144683F1008EF067 /* Default@2x.png */; };
+		A4EEE299144684C6008EF067 /* NYUView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EEE298144684C6008EF067 /* NYUView.m */; };
+		A4EF39CA14468E80005F8FCF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4EF39CC14468E80005F8FCF /* Localizable.strings */; };
+		A4EF39D4144710EE005F8FCF /* NYUDate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EF39D3144710EE005F8FCF /* NYUDate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A4C819251450EF6500C75155 /* NYULittleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYULittleView.h; sourceTree = "<group>"; };
+		A4C819261450EF6500C75155 /* NYULittleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYULittleView.m; sourceTree = "<group>"; };
+		A4C819291450FB5900C75155 /* Paton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Paton.jpg; sourceTree = "<group>"; };
+		A4EEE27314468384008EF067 /* NYU-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NYU-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4EEE27714468384008EF067 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A4EEE27914468384008EF067 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A4EEE27B14468384008EF067 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A4EEE27F14468384008EF067 /* NYU-IOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NYU-IOS-Info.plist"; sourceTree = "<group>"; };
+		A4EEE28114468384008EF067 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4EEE28314468384008EF067 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4EEE28514468384008EF067 /* NYU-IOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NYU-IOS-Prefix.pch"; sourceTree = "<group>"; };
+		A4EEE28614468384008EF067 /* NYUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYUAppDelegate.h; sourceTree = "<group>"; };
+		A4EEE28714468384008EF067 /* NYUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYUAppDelegate.m; sourceTree = "<group>"; };
+		A4EEE28E144683E0008EF067 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A4EEE290144683E5008EF067 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		A4EEE292144683EC008EF067 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A4EEE294144683F1008EF067 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A4EEE297144684C6008EF067 /* NYUView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUView.h; sourceTree = "<group>"; };
+		A4EEE298144684C6008EF067 /* NYUView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUView.m; sourceTree = "<group>"; };
+		A4EEE29B14468656008EF067 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4EEE29C14468661008EF067 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4EF39CB14468E80005F8FCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A4EF39CD14468E96005F8FCF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A4EF39CE14468E9A005F8FCF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A4EF39D2144710EE005F8FCF /* NYUDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NYUDate.h; path = NYUDate/NYUDate.h; sourceTree = "<group>"; };
+		A4EF39D3144710EE005F8FCF /* NYUDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NYUDate.m; path = NYUDate/NYUDate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4EEE27014468383008EF067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4EEE27814468384008EF067 /* UIKit.framework in Frameworks */,
+				A4EEE27A14468384008EF067 /* Foundation.framework in Frameworks */,
+				A4EEE27C14468384008EF067 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4EEE26814468383008EF067 = {
+			isa = PBXGroup;
+			children = (
+				A4EF39D514471116005F8FCF /* Classes */,
+				A4EEE29A144685B4008EF067 /* ressources */,
+				A4EEE27D14468384008EF067 /* NYU-IOS */,
+				A4EEE27614468384008EF067 /* Frameworks */,
+				A4EEE27414468384008EF067 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4EEE27414468384008EF067 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4EEE27314468384008EF067 /* NYU-IOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4EEE27614468384008EF067 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4EEE27714468384008EF067 /* UIKit.framework */,
+				A4EEE27914468384008EF067 /* Foundation.framework */,
+				A4EEE27B14468384008EF067 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4EEE27D14468384008EF067 /* NYU-IOS */ = {
+			isa = PBXGroup;
+			children = (
+				A4EEE297144684C6008EF067 /* NYUView.h */,
+				A4EEE298144684C6008EF067 /* NYUView.m */,
+				A4EEE28614468384008EF067 /* NYUAppDelegate.h */,
+				A4EEE28714468384008EF067 /* NYUAppDelegate.m */,
+				A4C819251450EF6500C75155 /* NYULittleView.h */,
+				A4C819261450EF6500C75155 /* NYULittleView.m */,
+				A4EEE27E14468384008EF067 /* Supporting Files */,
+			);
+			path = "NYU-IOS";
+			sourceTree = "<group>";
+		};
+		A4EEE27E14468384008EF067 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4EF39CC14468E80005F8FCF /* Localizable.strings */,
+				A4EEE27F14468384008EF067 /* NYU-IOS-Info.plist */,
+				A4EEE28014468384008EF067 /* InfoPlist.strings */,
+				A4EEE28314468384008EF067 /* main.m */,
+				A4EEE28514468384008EF067 /* NYU-IOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4EEE29A144685B4008EF067 /* ressources */ = {
+			isa = PBXGroup;
+			children = (
+				A4C819291450FB5900C75155 /* Paton.jpg */,
+				A4EEE294144683F1008EF067 /* Default@2x.png */,
+				A4EEE292144683EC008EF067 /* Default.png */,
+				A4EEE290144683E5008EF067 /* Icon@2x.png */,
+				A4EEE28E144683E0008EF067 /* Icon.png */,
+			);
+			name = ressources;
+			sourceTree = "<group>";
+		};
+		A4EF39D514471116005F8FCF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A4EF39D2144710EE005F8FCF /* NYUDate.h */,
+				A4EF39D3144710EE005F8FCF /* NYUDate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4EEE27214468383008EF067 /* NYU-IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4EEE28B14468384008EF067 /* Build configuration list for PBXNativeTarget "NYU-IOS" */;
+			buildPhases = (
+				A4EEE26F14468383008EF067 /* Sources */,
+				A4EEE27014468383008EF067 /* Frameworks */,
+				A4EEE27114468383008EF067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NYU-IOS";
+			productName = "NYU-IOS";
+			productReference = A4EEE27314468384008EF067 /* NYU-IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4EEE26A14468383008EF067 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A4EEE26D14468383008EF067 /* Build configuration list for PBXProject "NYU-IOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fr,
+				es,
+			);
+			mainGroup = A4EEE26814468383008EF067;
+			productRefGroup = A4EEE27414468384008EF067 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4EEE27214468383008EF067 /* NYU-IOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4EEE27114468383008EF067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4EEE28214468384008EF067 /* InfoPlist.strings in Resources */,
+				A4EEE28F144683E0008EF067 /* Icon.png in Resources */,
+				A4EEE291144683E5008EF067 /* Icon@2x.png in Resources */,
+				A4EEE293144683EC008EF067 /* Default.png in Resources */,
+				A4EEE295144683F1008EF067 /* Default@2x.png in Resources */,
+				A4EF39CA14468E80005F8FCF /* Localizable.strings in Resources */,
+				A4C8192A1450FB5900C75155 /* Paton.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4EEE26F14468383008EF067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4EEE28414468384008EF067 /* main.m in Sources */,
+				A4EEE28814468384008EF067 /* NYUAppDelegate.m in Sources */,
+				A4EEE299144684C6008EF067 /* NYUView.m in Sources */,
+				A4EF39D4144710EE005F8FCF /* NYUDate.m in Sources */,
+				A4C819271450EF6500C75155 /* NYULittleView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4EEE28014468384008EF067 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4EEE28114468384008EF067 /* en */,
+				A4EEE29B14468656008EF067 /* fr */,
+				A4EEE29C14468661008EF067 /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A4EF39CC14468E80005F8FCF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4EF39CB14468E80005F8FCF /* en */,
+				A4EF39CD14468E96005F8FCF /* fr */,
+				A4EF39CE14468E9A005F8FCF /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4EEE28914468384008EF067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4EEE28A14468384008EF067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4EEE28C14468384008EF067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NYU-IOS/NYU-IOS-Prefix.pch";
+				INFOPLIST_FILE = "NYU-IOS/NYU-IOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A4EEE28D14468384008EF067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NYU-IOS/NYU-IOS-Prefix.pch";
+				INFOPLIST_FILE = "NYU-IOS/NYU-IOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4EEE26D14468383008EF067 /* Build configuration list for PBXProject "NYU-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4EEE28914468384008EF067 /* Debug */,
+				A4EEE28A14468384008EF067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4EEE28B14468384008EF067 /* Build configuration list for PBXNativeTarget "NYU-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4EEE28C14468384008EF067 /* Debug */,
+				A4EEE28D14468384008EF067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4EEE26A14468383008EF067 /* Project object */;
+}
