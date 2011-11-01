@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+"Greetings" = "Hola NYU French";
+"DateFormat" ="DD/MM/YYYY";
+"First" = "Texto";
+"Second" = "Dessino";
+"Third" = "Next";
