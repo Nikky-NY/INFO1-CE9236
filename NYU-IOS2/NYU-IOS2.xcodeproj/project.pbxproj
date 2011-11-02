@@ -35,6 +35,10 @@
 		A499F5ED1458FD86001020A2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A499F5EC1458FD86001020A2 /* Icon.png */; };
 		A499F5EF1458FD94001020A2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A499F5EE1458FD94001020A2 /* Icon@2x.png */; };
 		A499F63014590836001020A2 /* Paton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A499F62F14590835001020A2 /* Paton.jpg */; };
+		A4D09477146057E4000F32CF /* NYUUlmView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D09476146057E4000F32CF /* NYUUlmView.m */; };
+		A4D0947A14605A91000F32CF /* NYUViewT2.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D0947914605A91000F32CF /* NYUViewT2.m */; };
+		A4D0947C14605E72000F32CF /* ulm.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D0947B14605E72000F32CF /* ulm.gif */; };
+		A4D094841460AB7C000F32CF /* NYUUlmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D094831460AB7B000F32CF /* NYUUlmViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +87,13 @@
 		A499F62C14590574001020A2 /* NYUDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUDate.h; sourceTree = "<group>"; };
 		A499F62D14590574001020A2 /* NYUDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUDate.m; sourceTree = "<group>"; };
 		A499F62F14590835001020A2 /* Paton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Paton.jpg; sourceTree = "<group>"; };
+		A4D09475146057E4000F32CF /* NYUUlmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUUlmView.h; sourceTree = "<group>"; };
+		A4D09476146057E4000F32CF /* NYUUlmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUUlmView.m; sourceTree = "<group>"; };
+		A4D0947814605A91000F32CF /* NYUViewT2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUViewT2.h; sourceTree = "<group>"; };
+		A4D0947914605A91000F32CF /* NYUViewT2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUViewT2.m; sourceTree = "<group>"; };
+		A4D0947B14605E72000F32CF /* ulm.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = ulm.gif; path = ../../../Desktop/ulm.gif; sourceTree = "<group>"; };
+		A4D094821460AB7B000F32CF /* NYUUlmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUUlmViewController.h; sourceTree = "<group>"; };
+		A4D094831460AB7B000F32CF /* NYUUlmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUUlmViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +117,7 @@
 				A499F5EB1458FC13001020A2 /* Resources */,
 				A417F9141459207A00B1C535 /* Default.png */,
 				A417F934145B93A000B1C535 /* gone.mp3 */,
+				A4D0947B14605E72000F32CF /* ulm.gif */,
 				A417F9121459207500B1C535 /* Default@2x.png */,
 				A499F5EE1458FD94001020A2 /* Icon@2x.png */,
 				A499F5EC1458FD86001020A2 /* Icon.png */,
@@ -140,6 +152,10 @@
 			children = (
 				A4529460145FB00800A214A5 /* NYUViewX.h */,
 				A4529461145FB00800A214A5 /* NYUViewX.m */,
+				A4D09475146057E4000F32CF /* NYUUlmView.h */,
+				A4D09476146057E4000F32CF /* NYUUlmView.m */,
+				A4D0947814605A91000F32CF /* NYUViewT2.h */,
+				A4D0947914605A91000F32CF /* NYUViewT2.m */,
 				A417F90F1459132D00B1C535 /* NYUViewD.h */,
 				A417F9101459132D00B1C535 /* NYUViewD.m */,
 				A499F5F214590518001020A2 /* NYUViewT.h */,
@@ -157,6 +173,8 @@
 				A499F5D41458FA63001020A2 /* NYUSecondViewController.m */,
 				A417F9161459970700B1C535 /* NYUThirdViewController.h */,
 				A417F9171459970700B1C535 /* NYUThirdViewController.m */,
+				A4D094821460AB7B000F32CF /* NYUUlmViewController.h */,
+				A4D094831460AB7B000F32CF /* NYUUlmViewController.m */,
 				A499F5C11458FA63001020A2 /* Supporting Files */,
 			);
 			path = "NYU-IOS2";
@@ -261,6 +279,7 @@
 				A417F9151459207A00B1C535 /* Default.png in Resources */,
 				A417F935145B93A000B1C535 /* gone.mp3 in Resources */,
 				A452945E145FAF7000A214A5 /* NYUXibViewController.xib in Resources */,
+				A4D0947C14605E72000F32CF /* ulm.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +301,9 @@
 				A417F933145B90F200B1C535 /* NYUviewA.m in Sources */,
 				A452945D145FAF7000A214A5 /* NYUXibViewController.m in Sources */,
 				A4529462145FB00800A214A5 /* NYUViewX.m in Sources */,
+				A4D09477146057E4000F32CF /* NYUUlmView.m in Sources */,
+				A4D0947A14605A91000F32CF /* NYUViewT2.m in Sources */,
+				A4D094841460AB7C000F32CF /* NYUUlmViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

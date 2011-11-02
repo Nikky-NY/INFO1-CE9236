@@ -3,4 +3,5 @@
 "DateFormat" ="MM/DD/YYYY";
 "First" = "Text";
 "Second" = "Drawing";
-"Third" = "Next";
+"Third" = "Anim";
+"Fourth" = "Xib";

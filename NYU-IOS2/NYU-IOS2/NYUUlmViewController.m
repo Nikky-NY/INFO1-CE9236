@@ -1,23 +1,23 @@
 //
-//  NYUXibViewController.m
+//  NYUUlmViewController.m
 //  NYU-IOS2
 //
 //  Created by Nicolas baudouin on 01/11/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "NYUXibViewController.h"
-#import "NYUViewX.h"
+#import "NYUUlmViewController.h"
+#import "NYUViewT2.h"
 
-@implementation NYUXibViewController
+@implementation NYUUlmViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = NSLocalizedString(@"Fourth", @"Fourth");
-        self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        self.title = NSLocalizedString(@"Fifth", @"Fifth");
+        self.tabBarItem.image = [UIImage imageNamed:@"second"];
     }
     return self;
 }
@@ -32,10 +32,26 @@
 
 #pragma mark - View lifecycle
 
+/*
+// Implement loadView to create a view hierarchy programmatically, without using a nib.
+- (void)loadView
+{
+}
+*/
+
+/*
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+}
+*/
+
+- (void)loadView
+{
+    NYUViewT2 *hv = [[NYUViewT2 alloc] initWithFrame:CGRectZero];
+    [self setView:hv];
+    
 }
 
 - (void)viewDidUnload

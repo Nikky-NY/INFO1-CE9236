@@ -12,6 +12,7 @@
 #import "NYUSecondViewController.h"
 #import "NYUThirdViewController.h"
 #import "NYUXibViewController.h"
+#import "NYUUlmViewController.h"
 
 
 @implementation NYUAppDelegate
@@ -29,15 +30,16 @@
 	}
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    UIViewController *viewController1, *viewController2, *viewController3, *viewController4;
+    UIViewController *viewController1, *viewController2, *viewController3, *viewController4, *viewController5;
    // if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         viewController1 = [[NYUFirstViewController alloc] init];
         viewController2 = [[NYUSecondViewController alloc] init];
         viewController3 = [[NYUThirdViewController alloc] init];
-        viewController4 = [[NYUXibViewController alloc] initWithNibName:@"NYUXibViewontroller" bundle:bundle];
+        viewController4 = [[NYUXibViewController alloc] initWithNibName:@"NYUXibViewController" bundle:bundle];
+        viewController5 = [[NYUUlmViewController alloc] init];
    // } else {
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, viewController3, viewController4, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, viewController3, viewController4, viewController5, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     
