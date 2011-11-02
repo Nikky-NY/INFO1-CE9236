@@ -121,12 +121,13 @@
      */
 }
 
-/*
+
 // Optional UITabBarControllerDelegate method.
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
+    NSLog(@"didSelectViewController");
 }
-*/
+
 
 /*
 // Optional UITabBarControllerDelegate method.
@@ -134,5 +135,15 @@
 {
 }
 */
+
+
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+	if (viewController == [self.tabBarController.moreNavigationController.viewControllers objectAtIndex:0])
+	{
+		NSLog(@"-> returned to More page");
+	}
+    NSLog(@"-> returned to More page");
+}
 
 @end

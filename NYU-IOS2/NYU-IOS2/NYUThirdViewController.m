@@ -45,7 +45,12 @@
     [super viewDidLoad];
 }
 */
+- (void)viewWillAppear:(BOOL)animated
+{
+	[super viewWillAppear:animated];
 
+    NSLog(@"APPEARS");
+}
 - (void)viewDidUnload
 {
     [super viewDidUnload];
