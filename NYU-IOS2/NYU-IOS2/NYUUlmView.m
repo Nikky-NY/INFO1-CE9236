@@ -33,7 +33,7 @@
     // Drawing code
     [ulmImage drawAtPoint:(CGPointZero)];
     NSLog(@"Passe la");
-    //CGPoint position = CGPointMake(se, <#CGFloat y#>)
+
 }
 
 @end

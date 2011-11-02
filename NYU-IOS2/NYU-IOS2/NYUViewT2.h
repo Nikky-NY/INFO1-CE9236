@@ -19,6 +19,6 @@
 
 -(void)animateFirstTouchAtPoint:(CGPoint)touchPoint;
 -(void)animateUlmViewToCenter;
--(void)annimateUlmViewToTopCorner;
+-(void)animateUlmViewToTopCorner;
 
 @end
