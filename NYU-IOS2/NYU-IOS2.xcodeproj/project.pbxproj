@@ -37,8 +37,8 @@
 		A499F63014590836001020A2 /* Paton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A499F62F14590835001020A2 /* Paton.jpg */; };
 		A4D09477146057E4000F32CF /* NYUUlmView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D09476146057E4000F32CF /* NYUUlmView.m */; };
 		A4D0947A14605A91000F32CF /* NYUViewT2.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D0947914605A91000F32CF /* NYUViewT2.m */; };
-		A4D0947C14605E72000F32CF /* ulm.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D0947B14605E72000F32CF /* ulm.gif */; };
 		A4D094841460AB7C000F32CF /* NYUUlmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D094831460AB7B000F32CF /* NYUUlmViewController.m */; };
+		A4D0949A14636D62000F32CF /* ulm.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D0949914636D62000F32CF /* ulm.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,13 +47,13 @@
 		A417F90E1459109E00B1C535 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A417F90F1459132D00B1C535 /* NYUViewD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUViewD.h; sourceTree = "<group>"; };
 		A417F9101459132D00B1C535 /* NYUViewD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUViewD.m; sourceTree = "<group>"; };
-		A417F9121459207500B1C535 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		A417F9141459207A00B1C535 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A417F9121459207500B1C535 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		A417F9141459207A00B1C535 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		A417F9161459970700B1C535 /* NYUThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUThirdViewController.h; sourceTree = "<group>"; };
 		A417F9171459970700B1C535 /* NYUThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUThirdViewController.m; sourceTree = "<group>"; };
 		A417F931145B90F200B1C535 /* NYUviewA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUviewA.h; sourceTree = "<group>"; };
 		A417F932145B90F200B1C535 /* NYUviewA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUviewA.m; sourceTree = "<group>"; };
-		A417F934145B93A000B1C535 /* gone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gone.mp3; path = "NYU-IOS2/gone.mp3"; sourceTree = "<group>"; };
+		A417F934145B93A000B1C535 /* gone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gone.mp3; sourceTree = "<group>"; };
 		A417F936145B944500B1C535 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A452945A145FAF7000A214A5 /* NYUXibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUXibViewController.h; sourceTree = "<group>"; };
 		A452945B145FAF7000A214A5 /* NYUXibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUXibViewController.m; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 		A499F5D41458FA63001020A2 /* NYUSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYUSecondViewController.m; sourceTree = "<group>"; };
 		A499F5D61458FA63001020A2 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		A499F5D81458FA63001020A2 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		A499F5EC1458FD86001020A2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		A499F5EE1458FD94001020A2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		A499F5EC1458FD86001020A2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		A499F5EE1458FD94001020A2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 		A499F5F01458FE02001020A2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A499F5F11458FE0B001020A2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A499F5F214590518001020A2 /* NYUViewT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUViewT.h; sourceTree = "<group>"; };
@@ -91,9 +91,9 @@
 		A4D09476146057E4000F32CF /* NYUUlmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUUlmView.m; sourceTree = "<group>"; };
 		A4D0947814605A91000F32CF /* NYUViewT2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUViewT2.h; sourceTree = "<group>"; };
 		A4D0947914605A91000F32CF /* NYUViewT2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUViewT2.m; sourceTree = "<group>"; };
-		A4D0947B14605E72000F32CF /* ulm.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = ulm.gif; path = ../../../Desktop/ulm.gif; sourceTree = "<group>"; };
 		A4D094821460AB7B000F32CF /* NYUUlmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUUlmViewController.h; sourceTree = "<group>"; };
 		A4D094831460AB7B000F32CF /* NYUUlmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUUlmViewController.m; sourceTree = "<group>"; };
+		A4D0949914636D62000F32CF /* ulm.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ulm.gif; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,12 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				A499F5EB1458FC13001020A2 /* Resources */,
-				A417F9141459207A00B1C535 /* Default.png */,
-				A417F934145B93A000B1C535 /* gone.mp3 */,
-				A4D0947B14605E72000F32CF /* ulm.gif */,
-				A417F9121459207500B1C535 /* Default@2x.png */,
-				A499F5EE1458FD94001020A2 /* Icon@2x.png */,
-				A499F5EC1458FD86001020A2 /* Icon.png */,
 				A499F62B14590574001020A2 /* NYUDate */,
 				A499F5C01458FA63001020A2 /* NYU-IOS2 */,
 				A499F5B91458FA63001020A2 /* Frameworks */,
@@ -195,10 +189,16 @@
 		A499F5EB1458FC13001020A2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A4D0949914636D62000F32CF /* ulm.gif */,
 				A499F5D61458FA63001020A2 /* second.png */,
 				A499F5D81458FA63001020A2 /* second@2x.png */,
 				A499F5CF1458FA63001020A2 /* first.png */,
 				A499F62F14590835001020A2 /* Paton.jpg */,
+				A417F9141459207A00B1C535 /* Default.png */,
+				A417F934145B93A000B1C535 /* gone.mp3 */,
+				A417F9121459207500B1C535 /* Default@2x.png */,
+				A499F5EE1458FD94001020A2 /* Icon@2x.png */,
+				A499F5EC1458FD86001020A2 /* Icon.png */,
 				A499F5D11458FA63001020A2 /* first@2x.png */,
 			);
 			name = Resources;
@@ -279,7 +279,7 @@
 				A417F9151459207A00B1C535 /* Default.png in Resources */,
 				A417F935145B93A000B1C535 /* gone.mp3 in Resources */,
 				A452945E145FAF7000A214A5 /* NYUXibViewController.xib in Resources */,
-				A4D0947C14605E72000F32CF /* ulm.gif in Resources */,
+				A4D0949A14636D62000F32CF /* ulm.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

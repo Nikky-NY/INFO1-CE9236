@@ -48,7 +48,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
-
+    
+    [self.view setNeedsDisplay];
     NSLog(@"APPEARS");
 }
 - (void)viewDidUnload

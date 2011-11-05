@@ -38,15 +38,17 @@
 		label.textColor = [UIColor whiteColor];
 		label.text = text;
 		[self addSubview: label];
+        
     }
     return self;
 }
 
 - (void) drawRect: (CGRect) rect
 {
-    // Drawing code
+    // Drawing code/
+    NSLog(@"Drawing GONE");
     [UIView animateWithDuration: 25
-                          delay: 12.75
+                          delay: 23.75
                         options: UIViewAnimationOptionCurveLinear
                      animations: ^{
                          //Move the label far enough to the left
@@ -57,8 +59,9 @@
                                                     );
                      }
                      completion: NULL
-	 ];
+     ];
 }
 
 
 @end
+
