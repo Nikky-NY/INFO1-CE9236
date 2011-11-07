@@ -17,6 +17,10 @@
 		A4D094C61465D337000F32CF /* Nov10AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D094C51465D337000F32CF /* Nov10AboutView.m */; };
 		A4D094C91465D370000F32CF /* Nov10GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D094C81465D370000F32CF /* Nov10GameView.m */; };
 		A4D094CC1465D509000F32CF /* Nov10MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D094CB1465D509000F32CF /* Nov10MainView.m */; };
+		A4D094CF1467871D000F32CF /* Nov10objectView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D094CE1467871C000F32CF /* Nov10objectView.m */; };
+		A4D094D114678F91000F32CF /* Stone.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D094D014678F91000F32CF /* Stone.png */; };
+		A4D094D3146791D4000F32CF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D094D2146791D4000F32CF /* icon.png */; };
+		A4D094D5146791ED000F32CF /* rpsls@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D094D4146791ED000F32CF /* rpsls@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +36,17 @@
 		A4D094BA1465D0B4000F32CF /* Nov10AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nov10AppDelegate.m; sourceTree = "<group>"; };
 		A4D094C11465D2E7000F32CF /* Nov10IntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nov10IntroView.h; sourceTree = "<group>"; };
 		A4D094C21465D2E7000F32CF /* Nov10IntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nov10IntroView.m; sourceTree = "<group>"; };
-		A4D094C41465D337000F32CF /* Nov10AboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = Nov10AboutView.h; sourceTree = "<group>"; };
+		A4D094C41465D337000F32CF /* Nov10AboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nov10AboutView.h; sourceTree = "<group>"; };
 		A4D094C51465D337000F32CF /* Nov10AboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nov10AboutView.m; sourceTree = "<group>"; };
 		A4D094C71465D370000F32CF /* Nov10GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nov10GameView.h; sourceTree = "<group>"; };
 		A4D094C81465D370000F32CF /* Nov10GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nov10GameView.m; sourceTree = "<group>"; };
 		A4D094CA1465D509000F32CF /* Nov10MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nov10MainView.h; sourceTree = "<group>"; };
 		A4D094CB1465D509000F32CF /* Nov10MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nov10MainView.m; sourceTree = "<group>"; };
+		A4D094CD1467871C000F32CF /* Nov10objectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nov10objectView.h; sourceTree = "<group>"; };
+		A4D094CE1467871C000F32CF /* Nov10objectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nov10objectView.m; sourceTree = "<group>"; };
+		A4D094D014678F91000F32CF /* Stone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stone.png; sourceTree = "<group>"; };
+		A4D094D2146791D4000F32CF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		A4D094D4146791ED000F32CF /* rpsls@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rpsls@2x.png"; path = "../rpsls@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +99,8 @@
 				A4D094C21465D2E7000F32CF /* Nov10IntroView.m */,
 				A4D094C41465D337000F32CF /* Nov10AboutView.h */,
 				A4D094C51465D337000F32CF /* Nov10AboutView.m */,
+				A4D094CD1467871C000F32CF /* Nov10objectView.h */,
+				A4D094CE1467871C000F32CF /* Nov10objectView.m */,
 				A4D094C71465D370000F32CF /* Nov10GameView.h */,
 				A4D094C81465D370000F32CF /* Nov10GameView.m */,
 				A4D094CA1465D509000F32CF /* Nov10MainView.h */,
@@ -102,6 +113,9 @@
 		A4D094B11465D0B4000F32CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4D094D4146791ED000F32CF /* rpsls@2x.png */,
+				A4D094D2146791D4000F32CF /* icon.png */,
+				A4D094D014678F91000F32CF /* Stone.png */,
 				A4D094B21465D0B4000F32CF /* Nov10-Info.plist */,
 				A4D094B31465D0B4000F32CF /* InfoPlist.strings */,
 				A4D094B61465D0B4000F32CF /* main.m */,
@@ -161,6 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D094B51465D0B4000F32CF /* InfoPlist.strings in Resources */,
+				A4D094D114678F91000F32CF /* Stone.png in Resources */,
+				A4D094D3146791D4000F32CF /* icon.png in Resources */,
+				A4D094D5146791ED000F32CF /* rpsls@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +194,7 @@
 				A4D094C61465D337000F32CF /* Nov10AboutView.m in Sources */,
 				A4D094C91465D370000F32CF /* Nov10GameView.m in Sources */,
 				A4D094CC1465D509000F32CF /* Nov10MainView.m in Sources */,
+				A4D094CF1467871D000F32CF /* Nov10objectView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

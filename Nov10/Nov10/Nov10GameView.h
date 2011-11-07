@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Nov10GameView : UIView
+@interface Nov10GameView : UIView {
+    NSArray *computerObjects;
+    NSArray *playerObjects;
+    NSInteger computerChoice;
+    NSInteger playerChoice;
+    UIImageView * computer0;
+
+}
 
 @end

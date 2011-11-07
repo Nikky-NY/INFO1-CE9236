@@ -16,6 +16,10 @@
     if (self) {
         // Initialization code
             self.backgroundColor = [UIColor blueColor];
+        computer0  = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Stone.png"]];
+        computer0.center = CGPointMake(128,128);
+        [self addSubview: computer0];
+        //[[TileView alloc] initWith
     }
     return self;
 }
