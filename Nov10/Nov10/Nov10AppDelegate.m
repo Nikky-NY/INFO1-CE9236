@@ -1,14 +1,15 @@
 //
-//  NYUAppDelegate.m
+//  Nov10AppDelegate.m
 //  Nov10
 //
 //  Created by Nicolas baudouin on 05/11/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "NYUAppDelegate.h"
+#import "Nov10AppDelegate.h"
+#import "Nov10MainView.h"
 
-@implementation NYUAppDelegate
+@implementation Nov10AppDelegate
 
 @synthesize window = _window;
 
@@ -17,8 +18,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    return YES;
+    UIScreen *screen = [UIScreen mainScreen];
+	mainView = [[Nov10MainView alloc] initWithFrame: screen.applicationFrame];
+	self.window = [[UIWindow alloc] initWithFrame: screen.bounds];
+	//self.window.backgroundColor = [UIColor whiteColor];
+    
+	[self.window addSubview: mainView];
+	[self.window makeKeyAndVisible];
+	return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

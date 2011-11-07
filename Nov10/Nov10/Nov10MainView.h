@@ -1,5 +1,5 @@
 //
-//  NYUAppDelegate.h
+//  Nov10MainView.h
 //  Nov10
 //
 //  Created by Nicolas baudouin on 05/11/11.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NYUAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface Nov10MainView : UIView{
+    NSArray *views;
+	NSUInteger index;
+}
 
 @end
