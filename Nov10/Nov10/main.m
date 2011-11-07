@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "NYUAppDelegate.h"
+#import "Nov10AppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([NYUAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([Nov10AppDelegate class]));
     }
 }

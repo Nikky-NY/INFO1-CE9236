@@ -12,7 +12,11 @@
 		A4D094AF1465D0B4000F32CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D094AE1465D0B4000F32CF /* CoreGraphics.framework */; };
 		A4D094B51465D0B4000F32CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4D094B31465D0B4000F32CF /* InfoPlist.strings */; };
 		A4D094B71465D0B4000F32CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D094B61465D0B4000F32CF /* main.m */; };
-		A4D094BB1465D0B4000F32CF /* NYUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D094BA1465D0B4000F32CF /* NYUAppDelegate.m */; };
+		A4D094BB1465D0B4000F32CF /* Nov10AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D094BA1465D0B4000F32CF /* Nov10AppDelegate.m */; };
+		A4D094C31465D2E7000F32CF /* Nov10IntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D094C21465D2E7000F32CF /* Nov10IntroView.m */; };
+		A4D094C61465D337000F32CF /* Nov10AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D094C51465D337000F32CF /* Nov10AboutView.m */; };
+		A4D094C91465D370000F32CF /* Nov10GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D094C81465D370000F32CF /* Nov10GameView.m */; };
+		A4D094CC1465D509000F32CF /* Nov10MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D094CB1465D509000F32CF /* Nov10MainView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +28,16 @@
 		A4D094B41465D0B4000F32CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A4D094B61465D0B4000F32CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4D094B81465D0B4000F32CF /* Nov10-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nov10-Prefix.pch"; sourceTree = "<group>"; };
-		A4D094B91465D0B4000F32CF /* NYUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYUAppDelegate.h; sourceTree = "<group>"; };
-		A4D094BA1465D0B4000F32CF /* NYUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYUAppDelegate.m; sourceTree = "<group>"; };
+		A4D094B91465D0B4000F32CF /* Nov10AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nov10AppDelegate.h; sourceTree = "<group>"; };
+		A4D094BA1465D0B4000F32CF /* Nov10AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nov10AppDelegate.m; sourceTree = "<group>"; };
+		A4D094C11465D2E7000F32CF /* Nov10IntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nov10IntroView.h; sourceTree = "<group>"; };
+		A4D094C21465D2E7000F32CF /* Nov10IntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nov10IntroView.m; sourceTree = "<group>"; };
+		A4D094C41465D337000F32CF /* Nov10AboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = Nov10AboutView.h; sourceTree = "<group>"; };
+		A4D094C51465D337000F32CF /* Nov10AboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nov10AboutView.m; sourceTree = "<group>"; };
+		A4D094C71465D370000F32CF /* Nov10GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nov10GameView.h; sourceTree = "<group>"; };
+		A4D094C81465D370000F32CF /* Nov10GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nov10GameView.m; sourceTree = "<group>"; };
+		A4D094CA1465D509000F32CF /* Nov10MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nov10MainView.h; sourceTree = "<group>"; };
+		A4D094CB1465D509000F32CF /* Nov10MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nov10MainView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +84,16 @@
 		A4D094B01465D0B4000F32CF /* Nov10 */ = {
 			isa = PBXGroup;
 			children = (
-				A4D094B91465D0B4000F32CF /* NYUAppDelegate.h */,
-				A4D094BA1465D0B4000F32CF /* NYUAppDelegate.m */,
+				A4D094B91465D0B4000F32CF /* Nov10AppDelegate.h */,
+				A4D094BA1465D0B4000F32CF /* Nov10AppDelegate.m */,
+				A4D094C11465D2E7000F32CF /* Nov10IntroView.h */,
+				A4D094C21465D2E7000F32CF /* Nov10IntroView.m */,
+				A4D094C41465D337000F32CF /* Nov10AboutView.h */,
+				A4D094C51465D337000F32CF /* Nov10AboutView.m */,
+				A4D094C71465D370000F32CF /* Nov10GameView.h */,
+				A4D094C81465D370000F32CF /* Nov10GameView.m */,
+				A4D094CA1465D509000F32CF /* Nov10MainView.h */,
+				A4D094CB1465D509000F32CF /* Nov10MainView.m */,
 				A4D094B11465D0B4000F32CF /* Supporting Files */,
 			);
 			path = Nov10;
@@ -152,7 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D094B71465D0B4000F32CF /* main.m in Sources */,
-				A4D094BB1465D0B4000F32CF /* NYUAppDelegate.m in Sources */,
+				A4D094BB1465D0B4000F32CF /* Nov10AppDelegate.m in Sources */,
+				A4D094C31465D2E7000F32CF /* Nov10IntroView.m in Sources */,
+				A4D094C61465D337000F32CF /* Nov10AboutView.m in Sources */,
+				A4D094C91465D370000F32CF /* Nov10GameView.m in Sources */,
+				A4D094CC1465D509000F32CF /* Nov10MainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
