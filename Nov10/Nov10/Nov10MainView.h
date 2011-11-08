@@ -13,4 +13,6 @@
 	NSUInteger index;
 }
 
+-(void)goButtonPressed;
+
 @end

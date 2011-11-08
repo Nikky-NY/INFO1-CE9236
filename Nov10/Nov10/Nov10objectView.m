@@ -10,13 +10,15 @@
 #import "Nov10GameView.h"
 
 @implementation Nov10objectView
+@synthesize basePos;
+@synthesize targetPos;
 
-- (id)initWithView: (Nov10GameView *) v basePos: (CGRect) base targetPos: (CGRect) target image: (NSString *) s{
+- (id)initWithView: (Nov10GameView *) v basePos: (CGRect) base targetPos: (CGRect) target activated: (BOOL) a image: (NSString *) s{
     
     UIImage *image = [UIImage imageNamed: s];
     self = [super initWithImage:image];
     if (self) {
-        self.userInteractionEnabled = YES;
+        self.userInteractionEnabled = a;
         gameView = v;
         basePos = base;
         targetPos = target;
@@ -31,7 +33,10 @@
                         options: UIViewAnimationCurveEaseInOut
      animations:^{
          [gameView place:self atPosition: targetPos];  
-     } completion:NULL];
+     } completion:^(BOOL finished){
+         [gameView playerIsDone];
+        }
+     ];
     
 }
 

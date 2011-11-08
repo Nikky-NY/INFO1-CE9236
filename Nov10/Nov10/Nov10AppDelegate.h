@@ -13,6 +13,8 @@
     Nov10MainView *mainView;
 }
 
+- (void) touchUpInside: (id) sender;
+
 @property (strong, nonatomic) UIWindow *window;
 
 @end

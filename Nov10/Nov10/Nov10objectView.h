@@ -16,6 +16,8 @@
 }
 
 //- (id)initWithView: (Nov10GameView *) v position: (CGRect *) p;
-- (id)initWithView: (Nov10GameView *) v basePos: (CGRect) base targetPos: (CGRect) target image: (NSString *) s;
+- (id)initWithView: (Nov10GameView *) v basePos: (CGRect) base targetPos: (CGRect) target activated: (BOOL) a image: (NSString *) s;
+@property (nonatomic, atomic) CGRect basePos;
+@property (nonatomic, atomic) CGRect targetPos;
 
 @end

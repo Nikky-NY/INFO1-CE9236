@@ -15,6 +15,7 @@
 @synthesize goButton;
 
 -(void) place: (Nov10objectView *) objView atPosition: (CGRect) pos {
+    NSLog(@"place");
     objView.frame = CGRectMake(pos.origin.x ,pos.origin.y,pos.size.width,pos.size.height);
 }
 
@@ -46,11 +47,11 @@
         CGRect computerTarget = CGRectMake(256,76, 64,64);
         
         computerObjects = [NSArray arrayWithObjects:
-                    [[Nov10objectView alloc] initWithView:self basePos:cg1 targetPos:computerTarget image:@"Stone.png"],
-                    [[Nov10objectView alloc] initWithView:self basePos:cg2 targetPos:computerTarget image:@"paper.png"],
-                    [[Nov10objectView alloc] initWithView:self basePos:cg3 targetPos:computerTarget image:@"Scissors.png"],
-                    [[Nov10objectView alloc] initWithView:self basePos:cg4 targetPos:computerTarget image:@"Lizard.png"],
-                    [[Nov10objectView alloc] initWithView:self basePos:cg5 targetPos:computerTarget image:@"spock.png"],
+            [[Nov10objectView alloc] initWithView:self basePos:cg1 targetPos:computerTarget activated:NO image:@"Stone.png"],
+            [[Nov10objectView alloc] initWithView:self basePos:cg2 targetPos:computerTarget activated:NO image:@"paper.png"],
+            [[Nov10objectView alloc] initWithView:self basePos:cg3 targetPos:computerTarget activated:NO image:@"Scissors.png"],
+            [[Nov10objectView alloc] initWithView:self basePos:cg4 targetPos:computerTarget activated:NO image:@"Lizard.png"],
+            [[Nov10objectView alloc] initWithView:self basePos:cg5 targetPos:computerTarget activated:NO image:@"spock.png"],
                     nil];
         
         for (NSInteger i =0;i< computerObjects.count;i++){
@@ -76,29 +77,76 @@
                            nil];
          */
         playerObjects = [NSArray arrayWithObjects:
-                    [[Nov10objectView alloc] initWithView:self basePos:cg1 targetPos:playerTarget image:@"Stone.png"],
-                    [[Nov10objectView alloc] initWithView:self basePos:cg2 targetPos:playerTarget image:@"paper.png"],
-                    [[Nov10objectView alloc] initWithView:self basePos:cg3 targetPos:playerTarget image:@"Scissors.png"],
-                    [[Nov10objectView alloc] initWithView:self basePos:cg4 targetPos:playerTarget image:@"Lizard.png"],
-                    [[Nov10objectView alloc] initWithView:self basePos:cg5 targetPos:playerTarget image:@"spock.png"],
+                    [[Nov10objectView alloc] initWithView:self basePos:cg1 targetPos:playerTarget activated:YES image:@"Stone.png"],
+                    [[Nov10objectView alloc] initWithView:self basePos:cg2 targetPos:playerTarget activated:YES image:@"paper.png"],
+                    [[Nov10objectView alloc] initWithView:self basePos:cg3 targetPos:playerTarget activated:YES image:@"Scissors.png"],
+                    [[Nov10objectView alloc] initWithView:self basePos:cg4 targetPos:playerTarget activated:YES image:@"Lizard.png"],
+                    [[Nov10objectView alloc] initWithView:self basePos:cg5 targetPos:playerTarget activated:YES image:@"spock.png"],
                     nil];
         //computer0.center = CGPointMake(128,128);
         //[self addSubview: computer0];
         for (NSInteger i =0;i< playerObjects.count;i++){
             Nov10objectView *v = [playerObjects objectAtIndex:i];
+            [playerObjects objectAtIndex:i];
             //v.frame = CGRectMake(64 * i, 460 - 6 - 64, 64, 64);
             [self addSubview:v];
             
         
         }
+        CGRect cgButton = CGRectMake(10, 210, 200,40);
+        goButton = [UIButton buttonWithType: UIButtonTypeRoundedRect];
+		goButton.frame = cgButton;
+        
+		[goButton setTitleColor: [UIColor redColor] forState: UIControlStateNormal];
+		[goButton setTitle: @" GO " forState: UIControlStateNormal];
+        
+		[goButton addTarget: [UIApplication sharedApplication].delegate
+                   action: @selector(touchUpInside:)
+         forControlEvents: UIControlEventTouchUpInside
+         ];
+        
+		[self addSubview: goButton];
 
-                //[[TileView alloc] initWith
     }
     return self;
 }
 
-- (IBAction)goButtonPressed:(id)sender{
+-(void)playerIsDone {
+  NSInteger r = rand() % computerObjects.count; 
+    Nov10objectView *comp = [computerObjects objectAtIndex: r];
+    [UIView animateWithDuration:0.2
+                          delay: 0
+                        options: UIViewAnimationCurveEaseInOut
+                     animations:^{
+                         [self place:comp atPosition: comp.targetPos];  
+                     } completion:NULL     ];
+    //[comp touchesBegan: nil withEvent: nil];
+}
+
+-(void)goButtonPressed {
     // do something to Go !!!
+    for (NSInteger i =0;i< computerObjects.count;i++){
+        Nov10objectView *v = [computerObjects objectAtIndex:i];
+        CGRect pos = [v basePos];
+        [UIView animateWithDuration:0.2
+                              delay: 0
+                            options: UIViewAnimationCurveEaseInOut
+                         animations:^{
+                             [self place:v atPosition: pos];  
+                         } completion:NULL];
+
+    }
+    for (NSInteger i =0;i< playerObjects.count;i++){
+        Nov10objectView *v = [playerObjects objectAtIndex:i];
+        CGRect pos = [v basePos];
+        [UIView animateWithDuration:0.2
+                              delay: 0
+                            options: UIViewAnimationCurveEaseInOut
+                         animations:^{
+                             [self place:v atPosition: pos];  
+                         } completion:NULL];        
+    }
+    
 }
 /*
 // Only override drawRect: if you perform custom drawing.

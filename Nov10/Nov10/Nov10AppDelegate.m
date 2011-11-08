@@ -67,4 +67,15 @@
      */
 }
 
+- (void) touchUpInside: (id) sender {
+	
+	//The sender is the button that was pressed.
+	NSLog(@"The \"%@\" button was pressed.",
+          [sender titleForState: UIControlStateNormal]);
+    [mainView goButtonPressed];
+    
+	//AudioServicesPlaySystemSound(sid);
+}
+
+
 @end

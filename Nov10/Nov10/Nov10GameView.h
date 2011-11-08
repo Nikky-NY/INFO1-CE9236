@@ -20,7 +20,8 @@
 
 }
 
--(IBAction)goButtonPressed:(id)sender;
+-(void)goButtonPressed;
+-(void)playerIsDone;
 
 -(void) place: (Nov10objectView *) objView atPosition: (CGRect ) pos;
 
