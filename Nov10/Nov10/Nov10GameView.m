@@ -106,6 +106,32 @@
          ];
         
 		[self addSubview: goButton];
+        
+        NSString *ptext = @"PLAYER";
+        NSString *ctext =@"COMPUTER";
+        
+		UIFont *font = [UIFont italicSystemFontOfSize: 18];
+		//CGSize size = [text sizeWithFont: font];
+		
+		CGRect f = CGRectMake(0,320, 200,64);
+		playerLabel = [[UILabel alloc] initWithFrame: f];
+		playerLabel.font = font;
+		playerLabel.backgroundColor = [UIColor clearColor];
+		playerLabel.textColor = [UIColor blackColor];
+        playerLabel.numberOfLines = 5;
+        playerLabel.textAlignment = UITextAlignmentCenter;
+		playerLabel.text = ptext;
+		[self addSubview: playerLabel];
+        f = CGRectMake(0,76, 200,64);
+        computerLabel = [[UILabel alloc] initWithFrame: f];
+		computerLabel.font = font;
+		computerLabel.backgroundColor = [UIColor clearColor];
+		computerLabel.textColor = [UIColor blackColor];
+        computerLabel.numberOfLines = 5;
+        computerLabel.textAlignment = UITextAlignmentCenter;
+		computerLabel.text = ctext;
+		[self addSubview: computerLabel];
+        
 
     }
     return self;

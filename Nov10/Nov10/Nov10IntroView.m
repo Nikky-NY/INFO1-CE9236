@@ -17,6 +17,21 @@
         // Initialization code
             self.backgroundColor = [UIColor purpleColor];
         
+        NSString *text = @"Rock Paper Scissors Lizard Spoke \n Swipe Left for Rules <-- \n Swipe Right for Game -->\n\n ENJOY !!!";
+        
+		UIFont *font = [UIFont italicSystemFontOfSize: 18];
+		//CGSize size = [text sizeWithFont: font];
+		
+		CGRect f = CGRectMake(0,0, 320,220);
+		introLabel = [[UILabel alloc] initWithFrame: f];
+		introLabel.font = font;
+		introLabel.backgroundColor = [UIColor clearColor];
+		introLabel.textColor = [UIColor whiteColor];
+        introLabel.numberOfLines = 5;
+        introLabel.textAlignment = UITextAlignmentCenter;
+		introLabel.text = text;
+		[self addSubview: introLabel];
+        
     }
     return self;
 }

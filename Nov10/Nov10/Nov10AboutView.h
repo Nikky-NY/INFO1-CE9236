@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Nov10AboutView : UIView
+@interface Nov10AboutView : UIView {
+    UIImageView *rules;
+    UILabel *rulesLabel;
+}
 
 @end

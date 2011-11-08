@@ -17,6 +17,7 @@
     NSInteger playerChoice;
     UIImageView * computer0;
     UIButton * goButton;
+    UILabel *playerLabel, *computerLabel;
 
 }
 

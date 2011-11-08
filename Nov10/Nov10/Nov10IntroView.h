@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface Nov10IntroView : UIView {
-
+    UILabel *introLabel;
 }
 
 @end
