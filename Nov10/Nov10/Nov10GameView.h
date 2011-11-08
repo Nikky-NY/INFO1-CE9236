@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Nov10objectView;
+
 
 @interface Nov10GameView : UIView {
     NSArray *computerObjects;
@@ -14,7 +16,15 @@
     NSInteger computerChoice;
     NSInteger playerChoice;
     UIImageView * computer0;
+    UIButton * goButton;
 
 }
+
+-(IBAction)goButtonPressed:(id)sender;
+
+-(void) place: (Nov10objectView *) objView atPosition: (CGRect ) pos;
+
+
+@property (nonatomic, retain) UIButton *goButton;
 
 @end

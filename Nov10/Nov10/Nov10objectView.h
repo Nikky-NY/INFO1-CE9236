@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Nov10GameView;
 
-@interface Nov10objectView : UIImageView
+@interface Nov10objectView : UIImageView {
+    Nov10GameView *gameView;
+    CGRect basePos, targetPos;
+    //position;
+}
+
+//- (id)initWithView: (Nov10GameView *) v position: (CGRect *) p;
+- (id)initWithView: (Nov10GameView *) v basePos: (CGRect) base targetPos: (CGRect) target image: (NSString *) s;
 
 @end
