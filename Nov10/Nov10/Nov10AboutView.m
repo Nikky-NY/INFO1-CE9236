@@ -20,7 +20,7 @@
         rules.frame = CGRectMake(0, 220, 320, 233);
       //  [rules sizeToFit];
         [self addSubview:rules];
-        NSString *text = @"Rock Paper Scissors Lizard Spoke \n\n Scissors cut paper & decapitate lizard \n Paper covers rock disproves Spock\n Rock crushes lizard  & scissors\n Lizard poisons Spock & eats paper \n Spock smashes scissors & vaporizes rock ";
+        NSString *text = @"Rock Paper Scissors Lizard Spoke \n\n Scissors cut paper & decapitate lizard \n Paper covers rock disproves Spock\n Rock crushes lizard  & scissors\n Lizard poisons Spock & eats paper \n Spock smashes scissors & vaporizes rock \n\n Swipe Left To Go Back";
         
 		UIFont *font = [UIFont italicSystemFontOfSize: 16];
 		//CGSize size = [text sizeWithFont: font];
@@ -30,7 +30,7 @@
 		rulesLabel.font = font;
 		rulesLabel.backgroundColor = [UIColor clearColor];
 		rulesLabel.textColor = [UIColor whiteColor];
-        rulesLabel.numberOfLines = 7;
+        rulesLabel.numberOfLines = 9;
         rulesLabel.textAlignment = UITextAlignmentCenter;
 		rulesLabel.text = text;
 		[self addSubview: rulesLabel];

@@ -17,7 +17,7 @@
         // Initialization code
             self.backgroundColor = [UIColor purpleColor];
         
-        NSString *text = @"Rock Paper Scissors Lizard Spoke \n Swipe Left for Rules <-- \n Swipe Right for Game -->\n\n ENJOY !!!";
+        NSString *text = @"Rock Paper Scissors Lizard Spoke \n Swipe Left for Game <-- \n Swipe Right for Rules -->\n\n ENJOY !!!";
         
 		UIFont *font = [UIFont italicSystemFontOfSize: 18];
 		//CGSize size = [text sizeWithFont: font];

@@ -59,8 +59,8 @@
 - (void) swipe: (UISwipeGestureRecognizer *) recognizer {
     NSLog(@"Swipe:");
     NSInteger nextIndex = index;
-	if (recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
-        NSLog(@"Swipe: right");
+	if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
+        NSLog(@"Swipe: left");
         if (index < 2 ) {
             nextIndex = index+1;
             [UIView transitionFromView: [views objectAtIndex: index]
@@ -74,8 +74,8 @@
         }
 		
 
-	} else if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
-            NSLog(@"Swipe:left");
+	} else if (recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
+            NSLog(@"Swipe:right");
         if (index > 0 ) {
             nextIndex = index-1;
             [UIView transitionFromView: [views objectAtIndex: index]

@@ -12,9 +12,9 @@
 @implementation Nov10objectView
 @synthesize basePos;
 @synthesize targetPos;
+@synthesize num;
 
-- (id)initWithView: (Nov10GameView *) v basePos: (CGRect) base targetPos: (CGRect) target activated: (BOOL) a image: (NSString *) s{
-    
+- (id)initWithView: (Nov10GameView *) v basePos: (CGRect) base targetPos: (CGRect) target activated: (BOOL) a image: (NSString *) s number: (NSInteger) n{
     UIImage *image = [UIImage imageNamed: s];
     self = [super initWithImage:image];
     if (self) {
@@ -22,6 +22,7 @@
         gameView = v;
         basePos = base;
         targetPos = target;
+        num = n;
         [gameView place: self atPosition: basePos];
     }
     return self;
@@ -34,7 +35,7 @@
      animations:^{
          [gameView place:self atPosition: targetPos];  
      } completion:^(BOOL finished){
-         [gameView playerIsDone];
+         [gameView playerIsDone: num];
         }
      ];
     

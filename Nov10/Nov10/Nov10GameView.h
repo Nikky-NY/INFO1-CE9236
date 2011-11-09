@@ -7,22 +7,29 @@
 //
 
 #import <UIKit/UIKit.h>
+
+#define NO_CHOICE 99;
 @class Nov10objectView;
 
 
 @interface Nov10GameView : UIView {
     NSArray *computerObjects;
     NSArray *playerObjects;
-    NSInteger computerChoice;
-    NSInteger playerChoice;
+    NSArray *resultsMatrix;
+    NSInteger computerChoice, computerCount;
+    NSInteger playerChoice, playerCount;
     UIImageView * computer0;
     UIButton * goButton;
-    UILabel *playerLabel, *computerLabel;
+    UILabel *playerLabel, *computerLabel, *resultLabel, *playerCountLabel, *computerCountLabel;
 
 }
 
 -(void)goButtonPressed;
--(void)playerIsDone;
+-(void)playerIsDone: (NSInteger) choice;
+@property NSInteger computerChoice;
+@property NSInteger playerChoice;
+@property NSInteger computerCount;
+@property NSInteger playerCount;
 
 -(void) place: (Nov10objectView *) objView atPosition: (CGRect ) pos;
 
