@@ -13,11 +13,13 @@
 		A44C69A9146DF9C800E6E60B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A44C69A7146DF9C800E6E60B /* InfoPlist.strings */; };
 		A44C69AB146DF9C800E6E60B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A44C69AA146DF9C800E6E60B /* main.m */; };
 		A44C69AF146DF9C800E6E60B /* N17AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A44C69AE146DF9C800E6E60B /* N17AppDelegate.m */; };
-		A44C69B6146DFBDD00E6E60B /* spy.png in Resources */ = {isa = PBXBuildFile; fileRef = A44C69B5146DFBDD00E6E60B /* spy.png */; };
 		A44C69B9146DFC2F00E6E60B /* N17mainView.m in Sources */ = {isa = PBXBuildFile; fileRef = A44C69B8146DFC2F00E6E60B /* N17mainView.m */; };
 		A44C69BC146DFC7100E6E60B /* N17bottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A44C69BB146DFC7100E6E60B /* N17bottomView.m */; };
 		A44C69BF146DFC9A00E6E60B /* N17topViewFront.m in Sources */ = {isa = PBXBuildFile; fileRef = A44C69BE146DFC9A00E6E60B /* N17topViewFront.m */; };
 		A44C69C2146DFCC700E6E60B /* N17topViewBack.m in Sources */ = {isa = PBXBuildFile; fileRef = A44C69C1146DFCC700E6E60B /* N17topViewBack.m */; };
+		A44C69C4146E1FFC00E6E60B /* Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = A44C69C3146E1FFC00E6E60B /* Phone.png */; };
+		A44C69CB146EEEA800E6E60B /* N17topView.m in Sources */ = {isa = PBXBuildFile; fileRef = A44C69CA146EEEA800E6E60B /* N17topView.m */; };
+		A44C69CD146F1A1F00E6E60B /* spy.png in Resources */ = {isa = PBXBuildFile; fileRef = A44C69CC146F1A1F00E6E60B /* spy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +33,6 @@
 		A44C69AC146DF9C800E6E60B /* Nov17-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nov17-Prefix.pch"; sourceTree = "<group>"; };
 		A44C69AD146DF9C800E6E60B /* N17AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N17AppDelegate.h; sourceTree = "<group>"; };
 		A44C69AE146DF9C800E6E60B /* N17AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = N17AppDelegate.m; sourceTree = "<group>"; };
-		A44C69B5146DFBDD00E6E60B /* spy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spy.png; path = ../spy.png; sourceTree = "<group>"; };
 		A44C69B7146DFC2F00E6E60B /* N17mainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = N17mainView.h; sourceTree = "<group>"; };
 		A44C69B8146DFC2F00E6E60B /* N17mainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = N17mainView.m; sourceTree = "<group>"; };
 		A44C69BA146DFC7100E6E60B /* N17bottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = N17bottomView.h; sourceTree = "<group>"; };
@@ -40,6 +41,10 @@
 		A44C69BE146DFC9A00E6E60B /* N17topViewFront.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = N17topViewFront.m; sourceTree = "<group>"; };
 		A44C69C0146DFCC700E6E60B /* N17topViewBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = N17topViewBack.h; sourceTree = "<group>"; };
 		A44C69C1146DFCC700E6E60B /* N17topViewBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = N17topViewBack.m; sourceTree = "<group>"; };
+		A44C69C3146E1FFC00E6E60B /* Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phone.png; sourceTree = "<group>"; };
+		A44C69C9146EEEA800E6E60B /* N17topView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = N17topView.h; path = ../N17topView.h; sourceTree = "<group>"; };
+		A44C69CA146EEEA800E6E60B /* N17topView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = N17topView.m; path = ../N17topView.m; sourceTree = "<group>"; };
+		A44C69CC146F1A1F00E6E60B /* spy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spy.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,15 +91,17 @@
 		A44C69A4146DF9C800E6E60B /* Nov17 */ = {
 			isa = PBXGroup;
 			children = (
+				A44C69C9146EEEA800E6E60B /* N17topView.h */,
+				A44C69CA146EEEA800E6E60B /* N17topView.m */,
 				A44C69AD146DF9C800E6E60B /* N17AppDelegate.h */,
 				A44C69AE146DF9C800E6E60B /* N17AppDelegate.m */,
 				A44C69B7146DFC2F00E6E60B /* N17mainView.h */,
 				A44C69B8146DFC2F00E6E60B /* N17mainView.m */,
-				A44C69BA146DFC7100E6E60B /* N17bottomView.h */,
-				A44C69BD146DFC9A00E6E60B /* N17topViewFront.h */,
 				A44C69C0146DFCC700E6E60B /* N17topViewBack.h */,
 				A44C69C1146DFCC700E6E60B /* N17topViewBack.m */,
+				A44C69BD146DFC9A00E6E60B /* N17topViewFront.h */,
 				A44C69BE146DFC9A00E6E60B /* N17topViewFront.m */,
+				A44C69BA146DFC7100E6E60B /* N17bottomView.h */,
 				A44C69BB146DFC7100E6E60B /* N17bottomView.m */,
 				A44C69A5146DF9C800E6E60B /* Supporting Files */,
 			);
@@ -104,7 +111,8 @@
 		A44C69A5146DF9C800E6E60B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A44C69B5146DFBDD00E6E60B /* spy.png */,
+				A44C69CC146F1A1F00E6E60B /* spy.png */,
+				A44C69C3146E1FFC00E6E60B /* Phone.png */,
 				A44C69A6146DF9C800E6E60B /* Nov17-Info.plist */,
 				A44C69A7146DF9C800E6E60B /* InfoPlist.strings */,
 				A44C69AA146DF9C800E6E60B /* main.m */,
@@ -164,7 +172,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A44C69A9146DF9C800E6E60B /* InfoPlist.strings in Resources */,
-				A44C69B6146DFBDD00E6E60B /* spy.png in Resources */,
+				A44C69C4146E1FFC00E6E60B /* Phone.png in Resources */,
+				A44C69CD146F1A1F00E6E60B /* spy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +190,7 @@
 				A44C69BC146DFC7100E6E60B /* N17bottomView.m in Sources */,
 				A44C69BF146DFC9A00E6E60B /* N17topViewFront.m in Sources */,
 				A44C69C2146DFCC700E6E60B /* N17topViewBack.m in Sources */,
+				A44C69CB146EEEA800E6E60B /* N17topView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

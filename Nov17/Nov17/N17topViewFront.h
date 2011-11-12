@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class N17mainView;
 
-@interface N17topViewFront : UIView
+@interface N17topViewFront : UIImageView{
+    N17mainView * bigView;
+}
+
+- (id)initWithView: (UIView *) v Image:(UIImage *)image Frame : (CGRect) f;
 
 @end

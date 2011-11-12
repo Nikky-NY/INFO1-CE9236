@@ -7,6 +7,7 @@
 //
 
 #import "N17AppDelegate.h"
+#import "N17mainView.h"
 
 @implementation N17AppDelegate
 
@@ -17,6 +18,13 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    UIScreen *screen = [UIScreen mainScreen];
+	mainView = [[N17mainView alloc] initWithFrame: screen.applicationFrame];
+	self.window = [[UIWindow alloc] initWithFrame: screen.bounds];
+	//self.window.backgroundColor = [UIColor whiteColor];
+    
+	[self.window addSubview: mainView];
     
     [self.window makeKeyAndVisible];
     return YES;

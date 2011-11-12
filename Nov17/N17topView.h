@@ -1,20 +1,16 @@
 //
-//  N17mainView.h
+//  N17topView.h
 //  Nov17
 //
-//  Created by Nicolas baudouin on 11/11/11.
+//  Created by Nicolas baudouin on 12/11/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#
 
-@interface N17mainView : UIView {
+@interface N17topView : UIView {
     NSArray *views;
-	NSInteger index;
+	NSUInteger index;
 }
-
-
-
 
 @end

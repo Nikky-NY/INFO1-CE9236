@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface N17bottomView : UIView
+@interface N17bottomView : UIView {
+    UILabel *bottomLabel;
+    UIPickerView *picker;
+}
 
 @end

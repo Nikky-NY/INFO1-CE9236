@@ -15,9 +15,21 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        self.backgroundColor = [UIColor blueColor];
     }
     return self;
 }
+
+- (id)initWithView: (UIView *) v Image:(UIImage *)image Frame : (CGRect) f{
+    self = [super initWithImage:image];
+    if (self) {
+        self.frame = f;
+        bigView = v;
+    }
+    return self;
+}
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

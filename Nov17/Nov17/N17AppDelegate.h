@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class N17mainView;
 
-@interface N17AppDelegate : UIResponder <UIApplicationDelegate>
+
+
+@interface N17AppDelegate : UIResponder <UIApplicationDelegate> {
+     N17mainView *mainView;   
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
