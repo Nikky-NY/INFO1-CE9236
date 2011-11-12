@@ -38,8 +38,16 @@
         viewController4 = [[NYUXibViewController alloc] initWithNibName:@"NYUXibViewController" bundle:bundle];
         viewController5 = [[NYUUlmViewController alloc] init];
    // } else {
+    
+    UIImage *image = [UIImage imageNamed:@"FrogBarrelWarning.jpg"];
+    UIImage *image2 = [UIImage imageNamed:@"bullet.png"];
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, viewController3, viewController4, viewController5, nil];
+    //self.tabBarController.tabBar.tintColor   =[UIColor blueColor];
+    self.tabBarController.tabBar.selectedImageTintColor =[UIColor redColor];
+    //self.tabBarController.tabBar.backgroundImage = image; // [UIColor redColor];
+    self.tabBarController.tabBar.alpha =0.5;
+    self.tabBarController.tabBar.selectionIndicatorImage = image2;
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     

@@ -39,6 +39,8 @@
 		A4D0947A14605A91000F32CF /* NYUViewT2.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D0947914605A91000F32CF /* NYUViewT2.m */; };
 		A4D094841460AB7C000F32CF /* NYUUlmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D094831460AB7B000F32CF /* NYUUlmViewController.m */; };
 		A4D0949A14636D62000F32CF /* ulm.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4D0949914636D62000F32CF /* ulm.gif */; };
+		A4F0E2F3146CB09D002B8CF0 /* FrogBarrelWarning.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4F0E2F2146CB09D002B8CF0 /* FrogBarrelWarning.jpg */; };
+		A4F0E2F6146CB50E002B8CF0 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F0E2F5146CB50E002B8CF0 /* bullet.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		A4D094821460AB7B000F32CF /* NYUUlmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYUUlmViewController.h; sourceTree = "<group>"; };
 		A4D094831460AB7B000F32CF /* NYUUlmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYUUlmViewController.m; sourceTree = "<group>"; };
 		A4D0949914636D62000F32CF /* ulm.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ulm.gif; sourceTree = SOURCE_ROOT; };
+		A4F0E2F2146CB09D002B8CF0 /* FrogBarrelWarning.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FrogBarrelWarning.jpg; sourceTree = "<group>"; };
+		A4F0E2F5146CB50E002B8CF0 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,8 @@
 		A499F5EB1458FC13001020A2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A4F0E2F5146CB50E002B8CF0 /* bullet.png */,
+				A4F0E2F2146CB09D002B8CF0 /* FrogBarrelWarning.jpg */,
 				A4D0949914636D62000F32CF /* ulm.gif */,
 				A499F5D61458FA63001020A2 /* second.png */,
 				A499F5D81458FA63001020A2 /* second@2x.png */,
@@ -280,6 +286,8 @@
 				A417F935145B93A000B1C535 /* gone.mp3 in Resources */,
 				A452945E145FAF7000A214A5 /* NYUXibViewController.xib in Resources */,
 				A4D0949A14636D62000F32CF /* ulm.gif in Resources */,
+				A4F0E2F3146CB09D002B8CF0 /* FrogBarrelWarning.jpg in Resources */,
+				A4F0E2F6146CB50E002B8CF0 /* bullet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
