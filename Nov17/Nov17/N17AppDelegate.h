@@ -15,6 +15,8 @@
      N17mainView *mainView;   
 }
 
+-(void) go;
+
 @property (strong, nonatomic) UIWindow *window;
 
 @end

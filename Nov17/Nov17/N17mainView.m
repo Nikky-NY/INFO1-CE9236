@@ -22,13 +22,14 @@
         CGRect bounds = self.bounds;
         CGRect topBounds = CGRectMake(0, 0, bounds.size.width , bounds.size.height / 2);
         CGRect bottomBounds = CGRectMake(0, bounds.size.height / 2, bounds.size.width , bounds.size.height / 2);
-        
+        N17topView *topV = [[N17topView alloc] initWithFrame:topBounds];
+        N17bottomView *botV = [[N17bottomView alloc] initWithFrame: bottomBounds];
         views = [NSArray arrayWithObjects:
-                 [[N17bottomView alloc] initWithFrame: bottomBounds],
-                 [[N17topView alloc] initWithFrame:topBounds],
+                 botV, //[[N17bottomView alloc] initWithFrame: bottomBounds],
+                 topV, // [[N17topView alloc] initWithFrame:topBounds],
                  nil
                  ];
-        
+        [botV setTop:topV];
 		index = 1;	
 		[self addSubview: [views objectAtIndex: 0]];
         [self addSubview: [views objectAtIndex: 1]];

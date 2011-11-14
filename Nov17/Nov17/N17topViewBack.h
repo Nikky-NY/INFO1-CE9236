@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface N17topViewBack : UIView
+@interface N17topViewBack : UIView {
+    UIButton *button;
+    UIImageView *image;
+    UISlider *slider;
+    UISegmentedControl *segment;
+    UISwitch *sw;
+    UIPageControl *page;
+    
+}
 
 @end

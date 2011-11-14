@@ -15,6 +15,25 @@
 - (void) wearOff {
     //label.text = @"0";
 }
+-(void)doit2{
+    NSLog(@"Do it 2");
+}
+
+-(void)selectTheTopView:(NSInteger) indice {
+    NSLog(@"Indice = %d", indice);
+    NSInteger nextIndex = 0;
+    if (index == 0) { nextIndex = 1;}
+    else {nextIndex = 0;}
+    
+    [UIView transitionFromView: [views objectAtIndex: index]
+                        toView: [views objectAtIndex: nextIndex]
+                      duration: 2.25
+                       options: UIViewAnimationOptionTransitionFlipFromRight
+                    completion: NULL
+     ];
+    index = nextIndex;
+
+}
 
 - (id)initWithFrame:(CGRect)frame
 {

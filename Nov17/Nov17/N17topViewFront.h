@@ -10,7 +10,7 @@
 @class N17mainView;
 
 @interface N17topViewFront : UIImageView{
-    N17mainView * bigView;
+    UIView * bigView;
 }
 
 - (id)initWithView: (UIView *) v Image:(UIImage *)image Frame : (CGRect) f;

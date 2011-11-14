@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#
+
 
 @interface N17mainView : UIView {
     NSArray *views;
 	NSInteger index;
 }
-
 
 
 

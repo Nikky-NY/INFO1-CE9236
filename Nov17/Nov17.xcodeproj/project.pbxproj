@@ -20,6 +20,11 @@
 		A44C69C4146E1FFC00E6E60B /* Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = A44C69C3146E1FFC00E6E60B /* Phone.png */; };
 		A44C69CB146EEEA800E6E60B /* N17topView.m in Sources */ = {isa = PBXBuildFile; fileRef = A44C69CA146EEEA800E6E60B /* N17topView.m */; };
 		A44C69CD146F1A1F00E6E60B /* spy.png in Resources */ = {isa = PBXBuildFile; fileRef = A44C69CC146F1A1F00E6E60B /* spy.png */; };
+		A44C69D0146F30B900E6E60B /* CustomPickerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A44C69CF146F30B900E6E60B /* CustomPickerDataSource.m */; };
+		A44C69D3146F31BA00E6E60B /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A44C69D2146F31BA00E6E60B /* CustomView.m */; };
+		A44C69D7146F527700E6E60B /* binoculars.png in Resources */ = {isa = PBXBuildFile; fileRef = A44C69D4146F527700E6E60B /* binoculars.png */; };
+		A44C69D8146F527800E6E60B /* bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = A44C69D5146F527700E6E60B /* bomb.png */; };
+		A44C69D9146F527800E6E60B /* hat.png in Resources */ = {isa = PBXBuildFile; fileRef = A44C69D6146F527700E6E60B /* hat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +50,13 @@
 		A44C69C9146EEEA800E6E60B /* N17topView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = N17topView.h; path = ../N17topView.h; sourceTree = "<group>"; };
 		A44C69CA146EEEA800E6E60B /* N17topView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = N17topView.m; path = ../N17topView.m; sourceTree = "<group>"; };
 		A44C69CC146F1A1F00E6E60B /* spy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spy.png; sourceTree = "<group>"; };
+		A44C69CE146F30B900E6E60B /* CustomPickerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPickerDataSource.h; sourceTree = "<group>"; };
+		A44C69CF146F30B900E6E60B /* CustomPickerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPickerDataSource.m; sourceTree = "<group>"; };
+		A44C69D1146F31BA00E6E60B /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		A44C69D2146F31BA00E6E60B /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		A44C69D4146F527700E6E60B /* binoculars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = binoculars.png; sourceTree = "<group>"; };
+		A44C69D5146F527700E6E60B /* bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bomb.png; sourceTree = "<group>"; };
+		A44C69D6146F527700E6E60B /* hat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hat.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,10 @@
 				A44C69BE146DFC9A00E6E60B /* N17topViewFront.m */,
 				A44C69BA146DFC7100E6E60B /* N17bottomView.h */,
 				A44C69BB146DFC7100E6E60B /* N17bottomView.m */,
+				A44C69D1146F31BA00E6E60B /* CustomView.h */,
+				A44C69D2146F31BA00E6E60B /* CustomView.m */,
+				A44C69CE146F30B900E6E60B /* CustomPickerDataSource.h */,
+				A44C69CF146F30B900E6E60B /* CustomPickerDataSource.m */,
 				A44C69A5146DF9C800E6E60B /* Supporting Files */,
 			);
 			path = Nov17;
@@ -111,6 +127,9 @@
 		A44C69A5146DF9C800E6E60B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A44C69D4146F527700E6E60B /* binoculars.png */,
+				A44C69D5146F527700E6E60B /* bomb.png */,
+				A44C69D6146F527700E6E60B /* hat.png */,
 				A44C69CC146F1A1F00E6E60B /* spy.png */,
 				A44C69C3146E1FFC00E6E60B /* Phone.png */,
 				A44C69A6146DF9C800E6E60B /* Nov17-Info.plist */,
@@ -174,6 +193,9 @@
 				A44C69A9146DF9C800E6E60B /* InfoPlist.strings in Resources */,
 				A44C69C4146E1FFC00E6E60B /* Phone.png in Resources */,
 				A44C69CD146F1A1F00E6E60B /* spy.png in Resources */,
+				A44C69D7146F527700E6E60B /* binoculars.png in Resources */,
+				A44C69D8146F527800E6E60B /* bomb.png in Resources */,
+				A44C69D9146F527800E6E60B /* hat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +213,8 @@
 				A44C69BF146DFC9A00E6E60B /* N17topViewFront.m in Sources */,
 				A44C69C2146DFCC700E6E60B /* N17topViewBack.m in Sources */,
 				A44C69CB146EEEA800E6E60B /* N17topView.m in Sources */,
+				A44C69D0146F30B900E6E60B /* CustomPickerDataSource.m in Sources */,
+				A44C69D3146F31BA00E6E60B /* CustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
