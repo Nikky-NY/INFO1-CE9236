@@ -13,9 +13,21 @@
 
 @synthesize window = _window;
 
--(void) go{
-    
+
+
+-(void) buttonPressed : (id) sender { 
+    [mainView buttonPressed];
 }
+-(void) switchValueChanged: (id) sender {
+    [mainView switchValueChanged];
+}
+-(void) pageChanged: (id) sender {
+    [mainView switchValueChanged];
+}
+-(void) sliderValueChanged : (id)sender {
+     [mainView sliderValueChanged];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

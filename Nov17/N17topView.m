@@ -12,18 +12,25 @@
 
 @implementation N17topView
 
-- (void) wearOff {
-    //label.text = @"0";
-}
--(void)doit2{
-    NSLog(@"Do it 2");
-}
 
 -(void)selectTheTopView:(NSInteger) indice {
     NSLog(@"Indice = %d", indice);
     NSInteger nextIndex = 0;
     if (index == 0) { nextIndex = 1;}
-    else {nextIndex = 0;}
+    else {
+        nextIndex = 0;
+        [UIView transitionFromView: [views objectAtIndex: index]
+                            toView: [views objectAtIndex: nextIndex]
+                          duration: 2.25
+                           options: UIViewAnimationOptionTransitionFlipFromRight
+                        completion: NULL
+         ];
+        index = nextIndex;
+        nextIndex = 1;
+    }
+    
+    [[views objectAtIndex: 1] selectTheDisplay:indice];
+
     
     [UIView transitionFromView: [views objectAtIndex: index]
                         toView: [views objectAtIndex: nextIndex]
@@ -49,7 +56,7 @@
                  ];
         [self addSubview: [views objectAtIndex: index]];
         
-        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc]
+        /*UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc]
                                              initWithTarget: self action: @selector(handleSingle:)
                                              ];
         singleTap.numberOfTapsRequired = 1;
@@ -64,11 +71,11 @@
         [singleTap requireGestureRecognizerToFail: doubleTap];
         
         [self addGestureRecognizer: singleTap];
-        [self addGestureRecognizer: doubleTap];
+        [self addGestureRecognizer: doubleTap];*/
     }
     return self;
 }
-
+/*
 - (void) handleSingle: (UITapGestureRecognizer *) recognizer {
     
     NSInteger nextIndex = 0;
@@ -90,7 +97,7 @@
     
     [self performSelector: @selector(wearOff) withObject: nil afterDelay: 2];
 }
-
+*/
 
 /*
 // Only override drawRect: if you perform custom drawing.

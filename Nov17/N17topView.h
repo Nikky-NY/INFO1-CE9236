@@ -12,7 +12,7 @@
     NSArray *views;
 	NSUInteger index;
 }
--(void)doit2;
+
 -(void)selectTheTopView:(NSInteger) indice;
 
 @end

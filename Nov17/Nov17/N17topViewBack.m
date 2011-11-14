@@ -10,16 +10,48 @@
 
 @implementation N17topViewBack
 
-
-- (void) touchUpInside: (id) sender {
-	UIPageControl *c = sender;
-    
-	//label.text = [NSString stringWithFormat:
-    //              @"page %2d of %d",
-    //              c.currentPage + 1, c.numberOfPages
-    //              ];
+-(void) selectTheDisplay:(NSInteger) indice {
+    switch (indice) {
+        case 0:
+            [button setHidden:NO];
+            [slider setHidden:YES];
+            [page setHidden: NO];
+            [segment setHidden:YES];
+            [sw setHidden:YES];
+            break;
+        case 1:
+            [button setHidden:NO];
+            [slider setHidden:NO];
+            [page setHidden: YES];
+            [segment setHidden:YES];
+            [sw setHidden:YES];
+             
+            break;
+        case 2 :
+            [button setHidden:NO];
+            [slider setHidden:YES];
+            [page setHidden: YES];
+            [segment setHidden:YES];
+            [sw setHidden:NO];
+            break;
+        default:
+            break;
+    }   
 }
 
+-(void)buttonPressed{
+    
+}
+
+-(void) switchValueChanged {
+    
+}
+-(void) pageChanged{
+    
+}
+-(void) sliderValueChanged{
+    
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -35,7 +67,7 @@
 		[button setTitle: @" AA " forState: UIControlStateNormal];
         
 		[button addTarget: [UIApplication sharedApplication].delegate
-                     action: @selector(touchUpInside:)
+                     action: @selector(buttonPressed:)
            forControlEvents: UIControlEventTouchUpInside
          ];
         [button setHidden:NO];
@@ -80,7 +112,10 @@
         sw = [[UISwitch alloc] initWithFrame:CGRectZero];
         sw.center = CGPointMake(frame.size.width - 80, 20);
         [sw setHidden:NO];
-        
+        [sw addTarget: [UIApplication sharedApplication].delegate
+                     action: @selector(switchValueChanged:)
+           forControlEvents: UIControlEventValueChanged
+         ];
         [self addSubview:sw];
                                      
         CGRect cgImage = CGRectMake(40, 40, frame.size.width - 80, frame.size.height -80);

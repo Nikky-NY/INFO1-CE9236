@@ -17,5 +17,6 @@
     UIPageControl *page;
     
 }
+-(void) selectTheDisplay:(NSInteger) indice;
 
 @end

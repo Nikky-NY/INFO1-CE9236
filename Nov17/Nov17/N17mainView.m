@@ -12,7 +12,19 @@
 
 @implementation N17mainView
 
+-(void)buttonPressed{
+    [[views objectAtIndex: 1] buttonPressed];
+}
 
+-(void) switchValueChanged {
+    [[views objectAtIndex: 1] switchValueChanged];
+}
+-(void) pageChanged{
+    [[views objectAtIndex: 1] switchValueChanged];
+}
+-(void) sliderValueChanged{
+    [[views objectAtIndex: 1]sliderValueChanged];
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
