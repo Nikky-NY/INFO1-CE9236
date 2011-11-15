@@ -14,9 +14,5 @@
 	NSInteger index;
 }
 
--(void)buttonPressed;
--(void) switchValueChanged;
--(void) pageChanged;
--(void) sliderValueChanged;
 
 @end

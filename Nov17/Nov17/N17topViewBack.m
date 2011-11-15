@@ -10,14 +10,31 @@
 
 @implementation N17topViewBack
 
+- (void) touchUpInside: (id) sender {
+    NSLog(@"touchUpInside");
+    if ( sender == page) {
+        switch (page.currentPage) {
+            case 0:
+                image.image = [displayImages objectForKey: @"max"];
+                break;
+                
+            default:
+                image.image = [displayImages objectForKey: @"fred"];
+                break;
+        }  
+    }
+
+ 
+}
 -(void) selectTheDisplay:(NSInteger) indice {
     switch (indice) {
         case 0:
             [button setHidden:NO];
             [slider setHidden:YES];
-            [page setHidden: NO];
+            [page setHidden: YES];
             [segment setHidden:YES];
             [sw setHidden:YES];
+            image.image = [displayImages objectForKey: @"fred"];
             break;
         case 1:
             [button setHidden:NO];
@@ -34,23 +51,84 @@
             [segment setHidden:YES];
             [sw setHidden:NO];
             break;
+        case 3 :
+            [button setHidden:NO];
+            [slider setHidden:YES];
+            [page setHidden: NO];
+            [segment setHidden:YES];
+            [sw setHidden:YES];
+            image.image = [displayImages objectForKey: @"max"];
+            break;
+        case 4:
+            [button setHidden:NO];
+            [slider setHidden:YES];
+            [page setHidden: YES];
+            [segment setHidden:NO];
+            [segment setSelectedSegmentIndex:0];
+            [sw setHidden:YES];
+            image.image = [displayImages objectForKey: @"flint"];
+            break;
         default:
+            [button setHidden:NO];
+            [slider setHidden:YES];
+            [page setHidden: YES];
+            [segment setHidden:YES];
+            [sw setHidden:YES];
             break;
     }   
 }
 
--(void)buttonPressed{
+-(void)buttonPressed: (id) sender {
+    NSLog(@"buttonPressed");
     
 }
 
--(void) switchValueChanged {
+-(void) switchValueChanged: (id) sender {
+      NSLog(@"switchValueChanged");
+}
+-(void) pageChanged: (id) sender {
+    NSLog(@"Page Changed Nah % d", page.currentPage);
+    switch (page.currentPage) {
+        case 0:
+            image.image = [displayImages objectForKey: @"max"];
+            break;
+        case 1:
+            image.image = [displayImages objectForKey: @"austin"];
+            break;
+        case 2 :
+             image.image = [displayImages objectForKey: @"bond"];
+            break;
+        case 3 :
+             image.image = [displayImages objectForKey: @"rambo"];
+            break;
+        default:
+            image.image = [displayImages objectForKey: @"fred"];
+            break;
+    }
     
 }
--(void) pageChanged{
+-(void) valueChanged: (id) sender {
+         NSLog(@"valueChanged");
+    switch (segment.selectedSegmentIndex) {
+        case 0:
+            image.image = [displayImages objectForKey: @"flint"];
+            break;
+        case 1:
+            image.image = [displayImages objectForKey: @"laser"];
+            break;
+        case 2 :
+            image.image = [displayImages objectForKey: @"baz"];
+            break;
+        default:
+            image.image = [displayImages objectForKey: @"flint"];
+            break;
+    }
+
     
 }
--(void) sliderValueChanged{
-    
+
+-(void) sliderValueChanged: (id) sender {
+    NSLog(@"sliderValueChanged");
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -58,6 +136,22 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+
+        displayImages = [NSDictionary dictionaryWithObjectsAndKeys:
+                        [UIImage imageNamed:@"max.jpg"],@"max",
+                        [UIImage imageNamed:@"austin.jpg"],@"austin",
+                        [UIImage imageNamed:@"fred.jpg"],@"fred",
+                        [UIImage imageNamed:@"spy.png"],@"spy",
+                        [UIImage imageNamed:@"flintlock.jpg"],@"flint",
+                        [UIImage imageNamed:@"bond.jpg"],@"bond",
+                         [UIImage imageNamed:@"bazooka.jpg"],@"baz",
+                         [UIImage imageNamed:@"rambo.jpg"],@"rambo",
+                         [UIImage imageNamed:@"laser.jpg"],@"laser",
+                                                 nil
+                        ];
+
+        
+        
         self.backgroundColor = [UIColor blackColor];
         CGRect cgButton = CGRectMake(40,5, 80,30);
         button = [UIButton buttonWithType: UIButtonTypeRoundedRect];
@@ -66,7 +160,7 @@
 		[button setTitleColor: [UIColor redColor] forState: UIControlStateNormal];
 		[button setTitle: @" AA " forState: UIControlStateNormal];
         
-		[button addTarget: [UIApplication sharedApplication].delegate
+		[button addTarget: self //[UIApplication sharedApplication].delegate
                      action: @selector(buttonPressed:)
            forControlEvents: UIControlEventTouchUpInside
          ];
@@ -76,6 +170,11 @@
         CGRect cgSlider = CGRectMake(40, frame.size.height - 30, frame.size.width - 80, 20);
         slider = [[UISlider alloc] initWithFrame:cgSlider];
         [slider setHidden:YES];
+        
+        [slider addTarget: self //[UIApplication sharedApplication].delegate
+                   action: @selector(sliderValueChanged:)
+         forControlEvents: UIControlEventValueChanged
+         ];
         [self addSubview: slider];
         
         
@@ -92,12 +191,13 @@
 		page.currentPage = 0;			//default is 0
         [page setHidden: NO];
 		[self addSubview: page];
+        [self touchUpInside: page];
         
         CGRect cgSegment = CGRectMake(40, 5, frame.size.width - 80, 30);
         NSArray *items = [NSArray arrayWithObjects:
-                          @"ShotGun",
+                          @"Flint",
                           @"Lazer",
-                          @"Bomb",
+                          @"Baz",
                           nil
                           ];
 		
@@ -106,21 +206,24 @@
         [segment setHidden:YES];
         segment.frame = cgSegment;
         //[segment setEnabled: NO forSegmentAtIndex: 2];
+        [segment addTarget: self // [UIApplication sharedApplication].delegate
+                    action: @selector(valueChanged:)
+          forControlEvents: UIControlEventValueChanged
+         ];
 
         [self addSubview: segment];
         
         sw = [[UISwitch alloc] initWithFrame:CGRectZero];
         sw.center = CGPointMake(frame.size.width - 80, 20);
         [sw setHidden:NO];
-        [sw addTarget: [UIApplication sharedApplication].delegate
+        [sw addTarget: self // [UIApplication sharedApplication].delegate
                      action: @selector(switchValueChanged:)
            forControlEvents: UIControlEventValueChanged
          ];
         [self addSubview:sw];
                                      
         CGRect cgImage = CGRectMake(40, 40, frame.size.width - 80, frame.size.height -80);
-        UIImage *img = [UIImage imageNamed: @"spy.png"];
-        image = [[UIImageView alloc] initWithImage:img];
+        image = [[UIImageView alloc] initWithImage:[displayImages objectForKey:@"spy"]];
         image.frame = cgImage;
         [self addSubview: image];
 

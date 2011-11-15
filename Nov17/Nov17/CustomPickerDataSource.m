@@ -35,10 +35,16 @@
         bomb.image = [UIImage imageNamed:@"bomb.png"];
         [viewArray addObject:bomb];
         
-        /*CustomView *eveningView = [[CustomView alloc] initWithFrame:CGRectZero];
-        eveningView.title = @"Evening";
-        eveningView.image = [UIImage imageNamed:@"6-12PM.png"];
-        [viewArray addObject:eveningView];*/
+        CustomView *help = [[CustomView alloc] initWithFrame:CGRectZero];
+        help.title = @"Get Help !";
+        help.image = [UIImage imageNamed:@"help.png"];
+        [viewArray addObject:help];
+        
+        CustomView *gun = [[CustomView alloc] initWithFrame:CGRectZero];
+        gun.title = @"Choose gun !";
+        gun.image = [UIImage imageNamed:@"gun2.png"];
+        [viewArray addObject:gun];
+        
         
         
         self.customPickerArray = viewArray;

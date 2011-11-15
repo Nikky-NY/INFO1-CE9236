@@ -55,9 +55,7 @@
         // you just need to set the correct origin in your view.
         //
         // position the picker at the bottom
-        CGRect pickerFrame = CGRectMake(0, 41, 320, 230);
-        picker.frame = pickerFrame;
-        
+        //picker.center = CGPointMake(160, 230 + 216/2);
         picker.showsSelectionIndicator = YES;
         // add this picker to our view controller, initially hidden
         picker.hidden = NO;

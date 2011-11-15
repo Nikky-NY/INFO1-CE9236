@@ -15,8 +15,10 @@
     UISegmentedControl *segment;
     UISwitch *sw;
     UIPageControl *page;
+    NSDictionary * displayImages;
     
 }
 -(void) selectTheDisplay:(NSInteger) indice;
+
 
 @end
