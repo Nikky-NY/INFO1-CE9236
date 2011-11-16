@@ -34,6 +34,8 @@
             [page setHidden: YES];
             [segment setHidden:YES];
             [sw setHidden:YES];
+            [topLabel setHidden:NO];
+            [downLablel setHidden:YES];
             image.image = [displayImages objectForKey: @"fred"];
             break;
         case 1:
@@ -42,6 +44,8 @@
             [page setHidden: YES];
             [segment setHidden:YES];
             [sw setHidden:YES];
+            [topLabel setHidden:NO];
+            [downLablel setHidden:YES];
              
             break;
         case 2 :
@@ -50,6 +54,8 @@
             [page setHidden: YES];
             [segment setHidden:YES];
             [sw setHidden:NO];
+            [topLabel setHidden:YES];
+            [downLablel setHidden:NO];
             break;
         case 3 :
             [button setHidden:NO];
@@ -57,6 +63,8 @@
             [page setHidden: NO];
             [segment setHidden:YES];
             [sw setHidden:YES];
+            [topLabel setHidden:NO];
+            [downLablel setHidden:YES];
             image.image = [displayImages objectForKey: @"max"];
             break;
         case 4:
@@ -66,6 +74,8 @@
             [segment setHidden:NO];
             [segment setSelectedSegmentIndex:0];
             [sw setHidden:YES];
+            [topLabel setHidden:YES];
+            [downLablel setHidden:NO];
             image.image = [displayImages objectForKey: @"flint"];
             break;
         default:
@@ -74,6 +84,8 @@
             [page setHidden: YES];
             [segment setHidden:YES];
             [sw setHidden:YES];
+            [topLabel setHidden:NO];
+            [downLablel setHidden:NO];
             break;
     }   
 }
@@ -91,18 +103,23 @@
     switch (page.currentPage) {
         case 0:
             image.image = [displayImages objectForKey: @"max"];
+            topLabel.text = @"Max";
             break;
         case 1:
             image.image = [displayImages objectForKey: @"austin"];
+            topLabel.text = @"Austin Power";
             break;
         case 2 :
              image.image = [displayImages objectForKey: @"bond"];
+            topLabel.text = @"Licensed to kill";
             break;
         case 3 :
              image.image = [displayImages objectForKey: @"rambo"];
+            topLabel.text = @"Brute Force Mode";
             break;
         default:
             image.image = [displayImages objectForKey: @"fred"];
+            topLabel.text = @"Flint Stone ??";
             break;
     }
     
@@ -112,15 +129,19 @@
     switch (segment.selectedSegmentIndex) {
         case 0:
             image.image = [displayImages objectForKey: @"flint"];
+            downLablel.text = @"Flint Lock Style !";
             break;
         case 1:
             image.image = [displayImages objectForKey: @"laser"];
+            downLablel.text = @"Men in Black Style !";
             break;
         case 2 :
             image.image = [displayImages objectForKey: @"baz"];
+            downLablel.text =@"Rambo Style !";
             break;
         default:
             image.image = [displayImages objectForKey: @"flint"];
+             downLablel.text = @"Flint Lock Style !";
             break;
     }
 
@@ -167,7 +188,18 @@
         [button setHidden:NO];
         [self addSubview: button];
         
-        CGRect cgSlider = CGRectMake(40, frame.size.height - 30, frame.size.width - 80, 20);
+        
+        CGRect cgtl = CGRectMake(130, 5, 130, 30);
+        topLabel = [[UILabel alloc] initWithFrame:cgtl];
+        [topLabel setHidden:YES];
+        [self addSubview:topLabel];
+        
+        CGRect cgSlider = CGRectMake(40, frame.size.height - 30, frame.size.width - 80, 30);
+        
+        downLablel = [[UILabel alloc] initWithFrame:cgSlider];
+        [downLablel setHidden:YES];
+        [self addSubview:downLablel];
+        
         slider = [[UISlider alloc] initWithFrame:cgSlider];
         [slider setHidden:YES];
         

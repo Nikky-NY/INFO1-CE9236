@@ -49,13 +49,13 @@
         customPickerDataSource = [[CustomPickerDataSource alloc] initWithView: self];
         picker.dataSource = customPickerDataSource;
         picker.delegate = customPickerDataSource;
-        
+        picker.transform = CGAffineTransformMakeScale(1, .9);
         // note we are using CGRectZero for the dimensions of our picker view,
         // this is because picker views have a built in optimum size,
         // you just need to set the correct origin in your view.
         //
         // position the picker at the bottom
-        //picker.center = CGPointMake(160, 230 + 216/2);
+        picker.center = CGPointMake(160, 138);
         picker.showsSelectionIndicator = YES;
         // add this picker to our view controller, initially hidden
         picker.hidden = NO;

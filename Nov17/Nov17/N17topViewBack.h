@@ -16,6 +16,8 @@
     UISwitch *sw;
     UIPageControl *page;
     NSDictionary * displayImages;
+    UILabel *topLabel;
+    UILabel *downLablel;
     
 }
 -(void) selectTheDisplay:(NSInteger) indice;
