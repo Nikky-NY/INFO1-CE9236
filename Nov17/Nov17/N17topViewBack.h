@@ -19,7 +19,7 @@
     NSDictionary * displayImages;
     UILabel *topLabel;
     UILabel *downLabel;
-          SystemSoundID sid, sid1, sid2,sid3, sid4;
+          SystemSoundID sid, sid1, sid2,sid3, sid4, sid5;
     NSInteger soundId;
   
     
@@ -29,7 +29,8 @@ enum {
     LASER,
     GUN,
     RIFLE,
-    BOMB
+    BOMB,
+    DIAL
 };
 -(void) selectTheDisplay:(NSInteger) indice;
 

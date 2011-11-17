@@ -86,7 +86,7 @@
             topLabel.text = @"Maxwell Smart";
             [page setCurrentPage:0];
             [button setTitle: @"CALL" forState: UIControlStateNormal];
-            soundId = GUN;
+            soundId = DIAL;
              [button setEnabled:YES];
 
             break;
@@ -219,6 +219,9 @@
         case BOMB:
             AudioServicesPlaySystemSound(sid4);
             break;
+        case DIAL:
+            AudioServicesPlaySystemSound(sid5);
+            break;
         default:
             AudioServicesPlaySystemSound(sid2);
             break;
@@ -285,6 +288,17 @@
         if (error != kAudioServicesNoError) {
             NSLog(@"AudioServicesCreateSystemSoundID error == %ld", error);
         }
+        filename = [bundle pathForResource: @"dial" ofType: @"mp3"];
+        //NSLog(@"filename == \"%@\"", filename);
+        
+        url = [NSURL fileURLWithPath: filename isDirectory: NO];
+        //NSLog(@"url == \"%@\"", url);
+        
+        error = AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &sid5);
+        if (error != kAudioServicesNoError) {
+            NSLog(@"AudioServicesCreateSystemSoundID error == %ld", error);
+        }
+
 
         soundId = 2;
         displayImages = [NSDictionary dictionaryWithObjectsAndKeys:
