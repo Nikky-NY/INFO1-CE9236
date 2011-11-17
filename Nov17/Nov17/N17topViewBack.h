@@ -17,7 +17,7 @@
     UIPageControl *page;
     NSDictionary * displayImages;
     UILabel *topLabel;
-    UILabel *downLablel;
+    UILabel *downLabel;
     
 }
 -(void) selectTheDisplay:(NSInteger) indice;

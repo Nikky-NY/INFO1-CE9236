@@ -13,6 +13,10 @@
 @implementation N17topView
 
 
+-(void)buttonPressed: (id) sender {
+    NSLog(@" SUPERVIEW buttonPressed");
+    
+}
 -(void)selectTheTopView:(NSInteger) indice {
     NSLog(@"Indice = %d", indice);
     NSInteger nextIndex = 0;

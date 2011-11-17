@@ -35,8 +35,12 @@
             [segment setHidden:YES];
             [sw setHidden:YES];
             [topLabel setHidden:NO];
-            [downLablel setHidden:YES];
+            [downLabel setHidden:NO];
+            topLabel.text = @" As FlintStone ?";
+            downLabel.text = @"Press Hide";
             image.image = [displayImages objectForKey: @"fred"];
+            [button setTitle: @"HIDE" forState: UIControlStateNormal];
+
             break;
         case 1:
             [button setHidden:NO];
@@ -45,8 +49,10 @@
             [segment setHidden:YES];
             [sw setHidden:YES];
             [topLabel setHidden:NO];
-            [downLablel setHidden:YES];
-             
+            [downLabel setHidden:YES];
+            topLabel.text = @"Use lenses";
+            image.image = [displayImages objectForKey: @"bigBond"];
+            [button setTitle: @"ZOOM" forState: UIControlStateNormal];
             break;
         case 2 :
             [button setHidden:NO];
@@ -55,7 +61,11 @@
             [segment setHidden:YES];
             [sw setHidden:NO];
             [topLabel setHidden:YES];
-            [downLablel setHidden:NO];
+            [downLabel setHidden:NO];
+            downLabel.text = @"Arm the bomb then blow";
+            image.image = [displayImages objectForKey: @"bigBomb"];
+            [button setTitle: @"BLOW" forState: UIControlStateNormal];
+
             break;
         case 3 :
             [button setHidden:NO];
@@ -64,8 +74,12 @@
             [segment setHidden:YES];
             [sw setHidden:YES];
             [topLabel setHidden:NO];
-            [downLablel setHidden:YES];
+            [downLabel setHidden:YES];
             image.image = [displayImages objectForKey: @"max"];
+            topLabel.text = @"Max";
+            [page setCurrentPage:0];
+            [button setTitle: @"CALL" forState: UIControlStateNormal];
+
             break;
         case 4:
             [button setHidden:NO];
@@ -74,9 +88,13 @@
             [segment setHidden:NO];
             [segment setSelectedSegmentIndex:0];
             [sw setHidden:YES];
-            [topLabel setHidden:YES];
-            [downLablel setHidden:NO];
+            [topLabel setHidden:NO];
+            [downLabel setHidden:YES];
             image.image = [displayImages objectForKey: @"flint"];
+            topLabel.text = @"Flint Lock Style !";
+            [button setTitle: @"SHOOT" forState: UIControlStateNormal];
+
+
             break;
         default:
             [button setHidden:NO];
@@ -85,14 +103,16 @@
             [segment setHidden:YES];
             [sw setHidden:YES];
             [topLabel setHidden:NO];
-            [downLablel setHidden:NO];
+            [downLabel setHidden:YES];
+            image.image = [displayImages objectForKey: @"image"];
+            topLabel.text = @"Not iplemented !";
+            [button setTitle: @"KO" forState: UIControlStateNormal];
             break;
     }   
 }
 
 -(void)buttonPressed: (id) sender {
     NSLog(@"buttonPressed");
-    
 }
 
 -(void) switchValueChanged: (id) sender {
@@ -103,7 +123,7 @@
     switch (page.currentPage) {
         case 0:
             image.image = [displayImages objectForKey: @"max"];
-            topLabel.text = @"Max";
+            topLabel.text = @"Maxwell Smart";
             break;
         case 1:
             image.image = [displayImages objectForKey: @"austin"];
@@ -129,19 +149,19 @@
     switch (segment.selectedSegmentIndex) {
         case 0:
             image.image = [displayImages objectForKey: @"flint"];
-            downLablel.text = @"Flint Lock Style !";
+            topLabel.text = @"Flint Lock Style !";
             break;
         case 1:
             image.image = [displayImages objectForKey: @"laser"];
-            downLablel.text = @"Men in Black Style !";
+            topLabel.text = @"Men in Black Style !";
             break;
         case 2 :
             image.image = [displayImages objectForKey: @"baz"];
-            downLablel.text =@"Rambo Style !";
+            topLabel.text =@"Rambo Style !";
             break;
         default:
             image.image = [displayImages objectForKey: @"flint"];
-             downLablel.text = @"Flint Lock Style !";
+             topLabel.text = @"Flint Lock Style !";
             break;
     }
 
@@ -149,7 +169,14 @@
 }
 
 -(void) sliderValueChanged: (id) sender {
-    NSLog(@"sliderValueChanged");
+    NSLog(@"sliderValueChanged %f", slider.value /2);
+
+    
+    image.transform = CGAffineTransformMakeScale(slider.value/2,slider.value/2);
+                                            
+
+//    [image.image scale: f] ;
+  //  image.image.sca
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -168,18 +195,21 @@
                          [UIImage imageNamed:@"bazooka.jpg"],@"baz",
                          [UIImage imageNamed:@"rambo.jpg"],@"rambo",
                          [UIImage imageNamed:@"laser.jpg"],@"laser",
+                         [UIImage imageNamed:@"James-Bond.jpg"],@"bigBond",
+                           [UIImage imageNamed:@"bigbomb.jpg"],@"bigBomb",
+                           [UIImage imageNamed:@"images.jpg"],@"image",
                                                  nil
                         ];
 
         
-        
+        //[self.superview selectTheTopWindow:0];
         self.backgroundColor = [UIColor blackColor];
         CGRect cgButton = CGRectMake(40,5, 80,30);
         button = [UIButton buttonWithType: UIButtonTypeRoundedRect];
 		button.frame = cgButton;
         
 		[button setTitleColor: [UIColor redColor] forState: UIControlStateNormal];
-		[button setTitle: @" AA " forState: UIControlStateNormal];
+		[button setTitle: @" GO " forState: UIControlStateNormal];
         
 		[button addTarget: self //[UIApplication sharedApplication].delegate
                      action: @selector(buttonPressed:)
@@ -189,18 +219,26 @@
         [self addSubview: button];
         
         
-        CGRect cgtl = CGRectMake(130, 5, 130, 30);
+        CGRect cgtl = CGRectMake(130, 5, 150, 30);
         topLabel = [[UILabel alloc] initWithFrame:cgtl];
+        topLabel.textAlignment = UITextAlignmentCenter;
         [topLabel setHidden:YES];
         [self addSubview:topLabel];
         
-        CGRect cgSlider = CGRectMake(40, frame.size.height - 30, frame.size.width - 80, 30);
+        CGRect cgSlider = CGRectMake(40, frame.size.height - 35, frame.size.width - 80, 30);
         
-        downLablel = [[UILabel alloc] initWithFrame:cgSlider];
-        [downLablel setHidden:YES];
-        [self addSubview:downLablel];
+        downLabel = [[UILabel alloc] initWithFrame:cgSlider];
+        downLabel.textAlignment = UITextAlignmentCenter;
+        [downLabel setHidden:YES];
+        [self addSubview:downLabel];
         
         slider = [[UISlider alloc] initWithFrame:cgSlider];
+        
+        slider.minimumValue = 1;
+		slider.maximumValue = 2;
+		slider.value = 0.5;
+		slider.continuous = YES;	//default is YES
+        [slider setThumbImage: [UIImage imageNamed:@"binoculars.png"] forState:UIControlStateNormal];
         [slider setHidden:YES];
         
         [slider addTarget: self //[UIApplication sharedApplication].delegate
@@ -236,7 +274,7 @@
         segment = [[UISegmentedControl alloc] initWithItems: items];
         segment.segmentedControlStyle = UISegmentedControlStylePlain;
         [segment setHidden:YES];
-        segment.frame = cgSegment;
+        segment.frame = cgSlider; // cgSegment;
         //[segment setEnabled: NO forSegmentAtIndex: 2];
         [segment addTarget: self // [UIApplication sharedApplication].delegate
                     action: @selector(valueChanged:)

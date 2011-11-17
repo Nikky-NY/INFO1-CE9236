@@ -16,6 +16,46 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+ /*
+    NSBundle *bundle = [NSBundle mainBundle];
+	if (bundle == nil) {
+		NSLog(@"Could not access main bundle.");
+		return YES;
+	}
+    
+	NSString *filename = [bundle pathForResource: @"MI" ofType: @"mp4"];
+	if (filename == nil) {
+		NSLog(@"could not find file MI.mp4");
+		return YES;
+	}
+    
+	NSURL *url = [NSURL fileURLWithPath: filename];
+	if (url == nil) {
+		NSLog(@"could not create URL for file %@", filename);
+		return YES;
+	}
+    
+	controller = [[MPMoviePlayerController alloc] init];
+	if (controller == nil) {
+		NSLog(@"could not create MPMoviePlayerController");
+		return YES;
+	}
+    
+	[controller setContentURL: url];
+	controller.scalingMode = MPMovieScalingModeNone;
+	controller.controlStyle = MPMovieControlStyleFullscreen;
+	controller.movieSourceType = MPMovieSourceTypeFile; //vs.stream
+    
+	NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+	
+	[center
+     addObserver: self
+     selector: @selector(playbackDidFinish:)
+     name: MPMoviePlayerPlaybackDidFinishNotification
+     object: controller
+     ];
+*/
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];

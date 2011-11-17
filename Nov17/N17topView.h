@@ -12,7 +12,7 @@
     NSArray *views;
 	NSUInteger index;
 }
-
+-(void)buttonPressed: (id) sender;
 -(void)selectTheTopView:(NSInteger) indice;
 
 @end

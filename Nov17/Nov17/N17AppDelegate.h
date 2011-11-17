@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
+
 @class N17mainView;
 
 
 
 @interface N17AppDelegate : UIResponder <UIApplicationDelegate> {
-     N17mainView *mainView;   
+     N17mainView *mainView;
+    MPMoviePlayerController *controller;
 }
 
 

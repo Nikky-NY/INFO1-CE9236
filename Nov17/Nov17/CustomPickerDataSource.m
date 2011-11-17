@@ -47,22 +47,22 @@
         
         CustomView *tape = [[CustomView alloc] initWithFrame:CGRectZero];
         tape.title = @"M.I. Tape";
-        tape.image = [UIImage imageNamed:@"gun2.png"];
+        tape.image = [UIImage imageNamed:@"microphone-icon.png"];
         [viewArray addObject:tape];
         
         CustomView *target = [[CustomView alloc] initWithFrame:CGRectZero];
         target.title = @"Target lock";
-        target.image = [UIImage imageNamed:@"gun2.png"];
+        target.image = [UIImage imageNamed:@"QuestionMarkBlack.png"];
         [viewArray addObject:target];
         
         CustomView *foo = [[CustomView alloc] initWithFrame:CGRectZero];
         foo.title = @"foo()  ...";
-        foo.image = [UIImage imageNamed:@"gun2.png"];
+        foo.image = [UIImage imageNamed:@"QuestionMarkBlack.png"];
         [viewArray addObject:foo];
 
         CustomView *foo83 = [[CustomView alloc] initWithFrame:CGRectZero];
         foo83.title = @"foo() 83.";
-        foo83.image = [UIImage imageNamed:@"gun2.png"];
+        foo83.image = [UIImage imageNamed:@"QuestionMarkBlack.png"];
         [viewArray addObject:foo83];
         
         

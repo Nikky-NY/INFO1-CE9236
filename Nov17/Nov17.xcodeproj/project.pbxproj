@@ -17,6 +17,14 @@
 		A425657714723251006B6072 /* laser.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A425657214723250006B6072 /* laser.jpg */; };
 		A425657814723251006B6072 /* shotgun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A425657314723251006B6072 /* shotgun.jpg */; };
 		A425657A1472330D006B6072 /* flintlock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A42565791472330D006B6072 /* flintlock.jpg */; };
+		A433647A1474B9EF0010DC74 /* James-Bond.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A43364791474B9EF0010DC74 /* James-Bond.jpg */; };
+		A433647D1474BAAA0010DC74 /* bigbomb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A433647C1474BAAA0010DC74 /* bigbomb.jpg */; };
+		A43364851474C2540010DC74 /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A43364821474C2540010DC74 /* camera-icon.png */; };
+		A43364861474C2540010DC74 /* microphone-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A43364831474C2540010DC74 /* microphone-icon.png */; };
+		A43364871474C2540010DC74 /* QuestionMarkBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = A43364841474C2540010DC74 /* QuestionMarkBlack.png */; };
+		A43364891474C9DA0010DC74 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43364881474C9DA0010DC74 /* MediaPlayer.framework */; };
+		A433648B1474CC5E0010DC74 /* MI.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A433648A1474CC5E0010DC74 /* MI.mp4 */; };
+		A433648D1474CEB50010DC74 /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A433648C1474CEB50010DC74 /* images.jpg */; };
 		A44C699F146DF9C800E6E60B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44C699E146DF9C800E6E60B /* UIKit.framework */; };
 		A44C69A1146DF9C800E6E60B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44C69A0146DF9C800E6E60B /* Foundation.framework */; };
 		A44C69A3146DF9C800E6E60B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44C69A2146DF9C800E6E60B /* CoreGraphics.framework */; };
@@ -49,6 +57,14 @@
 		A425657214723250006B6072 /* laser.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laser.jpg; sourceTree = "<group>"; };
 		A425657314723251006B6072 /* shotgun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shotgun.jpg; sourceTree = "<group>"; };
 		A42565791472330D006B6072 /* flintlock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flintlock.jpg; sourceTree = "<group>"; };
+		A43364791474B9EF0010DC74 /* James-Bond.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "James-Bond.jpg"; sourceTree = "<group>"; };
+		A433647C1474BAAA0010DC74 /* bigbomb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bigbomb.jpg; sourceTree = "<group>"; };
+		A43364821474C2540010DC74 /* camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon.png"; sourceTree = "<group>"; };
+		A43364831474C2540010DC74 /* microphone-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone-icon.png"; sourceTree = "<group>"; };
+		A43364841474C2540010DC74 /* QuestionMarkBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuestionMarkBlack.png; sourceTree = "<group>"; };
+		A43364881474C9DA0010DC74 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A433648A1474CC5E0010DC74 /* MI.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MI.mp4; sourceTree = "<group>"; };
+		A433648C1474CEB50010DC74 /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpg; sourceTree = "<group>"; };
 		A44C699A146DF9C800E6E60B /* Nov17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nov17.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44C699E146DF9C800E6E60B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A44C69A0146DF9C800E6E60B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43364891474C9DA0010DC74 /* MediaPlayer.framework in Frameworks */,
 				A44C699F146DF9C800E6E60B /* UIKit.framework in Frameworks */,
 				A44C69A1146DF9C800E6E60B /* Foundation.framework in Frameworks */,
 				A44C69A3146DF9C800E6E60B /* CoreGraphics.framework in Frameworks */,
@@ -115,6 +132,7 @@
 		A44C699D146DF9C800E6E60B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A43364881474C9DA0010DC74 /* MediaPlayer.framework */,
 				A44C699E146DF9C800E6E60B /* UIKit.framework */,
 				A44C69A0146DF9C800E6E60B /* Foundation.framework */,
 				A44C69A2146DF9C800E6E60B /* CoreGraphics.framework */,
@@ -149,6 +167,13 @@
 		A44C69A5146DF9C800E6E60B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A433648C1474CEB50010DC74 /* images.jpg */,
+				A433648A1474CC5E0010DC74 /* MI.mp4 */,
+				A43364821474C2540010DC74 /* camera-icon.png */,
+				A43364831474C2540010DC74 /* microphone-icon.png */,
+				A43364841474C2540010DC74 /* QuestionMarkBlack.png */,
+				A433647C1474BAAA0010DC74 /* bigbomb.jpg */,
+				A43364791474B9EF0010DC74 /* James-Bond.jpg */,
 				A42565791472330D006B6072 /* flintlock.jpg */,
 				A425656F14723250006B6072 /* bond.jpg */,
 				A425657014723250006B6072 /* rambo.jpg */,
@@ -241,6 +266,13 @@
 				A425657714723251006B6072 /* laser.jpg in Resources */,
 				A425657814723251006B6072 /* shotgun.jpg in Resources */,
 				A425657A1472330D006B6072 /* flintlock.jpg in Resources */,
+				A433647A1474B9EF0010DC74 /* James-Bond.jpg in Resources */,
+				A433647D1474BAAA0010DC74 /* bigbomb.jpg in Resources */,
+				A43364851474C2540010DC74 /* camera-icon.png in Resources */,
+				A43364861474C2540010DC74 /* microphone-icon.png in Resources */,
+				A43364871474C2540010DC74 /* QuestionMarkBlack.png in Resources */,
+				A433648B1474CC5E0010DC74 /* MI.mp4 in Resources */,
+				A433648D1474CEB50010DC74 /* images.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
