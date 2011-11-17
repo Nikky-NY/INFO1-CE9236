@@ -41,6 +41,8 @@
             downLabel.text = @"Press Hide";
             image.image = [displayImages objectForKey: @"fred"];
             [button setTitle: @"HIDE" forState: UIControlStateNormal];
+            soundId = GUN;
+             [button setEnabled:YES];
 
             break;
         case 1:
@@ -54,6 +56,8 @@
             topLabel.text = @"Use lenses";
             image.image = [displayImages objectForKey: @"bigBond"];
             [button setTitle: @"ZOOM" forState: UIControlStateNormal];
+            soundId = GUN;
+             [button setEnabled:YES];
             break;
         case 2 :
             [button setHidden:NO];
@@ -66,6 +70,8 @@
             downLabel.text = @"Arm the bomb then blow";
             image.image = [displayImages objectForKey: @"bigBomb"];
             [button setTitle: @"BLOW" forState: UIControlStateNormal];
+            soundId = BOMB;
+            [button setEnabled:NO];
 
             break;
         case 3 :
@@ -77,9 +83,11 @@
             [topLabel setHidden:NO];
             [downLabel setHidden:YES];
             image.image = [displayImages objectForKey: @"max"];
-            topLabel.text = @"Max";
+            topLabel.text = @"Maxwell Smart";
             [page setCurrentPage:0];
             [button setTitle: @"CALL" forState: UIControlStateNormal];
+            soundId = GUN;
+             [button setEnabled:YES];
 
             break;
         case 4:
@@ -94,6 +102,8 @@
             image.image = [displayImages objectForKey: @"flint"];
             topLabel.text = @"Flint Lock Style !";
             [button setTitle: @"SHOOT" forState: UIControlStateNormal];
+            soundId = RIFLE;
+             [button setEnabled:YES];
 
 
             break;
@@ -108,6 +118,8 @@
             image.image = [displayImages objectForKey: @"image"];
             topLabel.text = @"Not iplemented !";
             [button setTitle: @"KO" forState: UIControlStateNormal];
+            soundId = GUN;
+             [button setEnabled:YES];
             break;
     }   
 }
@@ -116,6 +128,11 @@
 
 -(void) switchValueChanged: (id) sender {
       NSLog(@"switchValueChanged");
+    if (sw.isOn) {
+        [button setEnabled:YES];
+    } else {
+        [button setEnabled:NO];
+    }
 }
 -(void) pageChanged: (id) sender {
     NSLog(@"Page Changed Nah % d", page.currentPage);
@@ -141,6 +158,7 @@
             topLabel.text = @"Flint Stone ??";
             break;
     }
+ 
     
 }
 -(void) valueChanged: (id) sender {
@@ -149,18 +167,22 @@
         case 0:
             image.image = [displayImages objectForKey: @"flint"];
             topLabel.text = @"Flint Lock Style !";
+            soundId = RIFLE;
             break;
         case 1:
             image.image = [displayImages objectForKey: @"laser"];
             topLabel.text = @"Men in Black Style !";
+            soundId = LASER;
             break;
         case 2 :
             image.image = [displayImages objectForKey: @"baz"];
             topLabel.text =@"Rambo Style !";
+            soundId = GRENADE;
             break;
         default:
             image.image = [displayImages objectForKey: @"flint"];
              topLabel.text = @"Flint Lock Style !";
+            soundId = GUN;
             break;
     }
 
@@ -178,13 +200,93 @@
   //  image.image.sca
 }
 
+
+-(void)buttonPressed: (id) sender {
+    NSLog(@"Koi ?");
+    switch (soundId) {
+        case GRENADE:
+            AudioServicesPlaySystemSound(sid);
+            break;
+        case LASER:
+            AudioServicesPlaySystemSound(sid1);
+            break;
+        case GUN:
+            AudioServicesPlaySystemSound(sid2);
+            break;
+        case RIFLE:
+            AudioServicesPlaySystemSound(sid3);
+            break;
+        case BOMB:
+            AudioServicesPlaySystemSound(sid4);
+            break;
+        default:
+            AudioServicesPlaySystemSound(sid2);
+            break;
+    }
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
        
+        NSBundle *bundle = [NSBundle mainBundle];
+        NSLog(@"bundle.bundlePath == \"%@\"", bundle.bundlePath);	
+        
+        NSString *filename = [bundle pathForResource: @"grenade" ofType: @"mp3"];
+        //NSLog(@"filename == \"%@\"", filename);
+        
+        NSURL *url = [NSURL fileURLWithPath: filename isDirectory: NO];
+        //NSLog(@"url == \"%@\"", url);
+        
+        OSStatus error = AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &sid);
+        if (error != kAudioServicesNoError) {
+            NSLog(@"AudioServicesCreateSystemSoundID error == %ld", error);
+        }
+        
+        filename = [bundle pathForResource: @"laser" ofType: @"mp3"];
+        // NSLog(@"filename == \"%@\"", filename);
+        
+        url = [NSURL fileURLWithPath: filename isDirectory: NO];
+        //NSLog(@"url == \"%@\"", url);
+        
+        error = AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &sid1);
+        if (error != kAudioServicesNoError) {
+            NSLog(@"AudioServicesCreateSystemSoundID error == %ld", error);
+        }
+        filename = [bundle pathForResource: @"gun" ofType: @"mp3"];
+        //NSLog(@"filename == \"%@\"", filename);
+        
+        url = [NSURL fileURLWithPath: filename isDirectory: NO];
+        //NSLog(@"url == \"%@\"", url);
+        
+        error = AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &sid2);
+        if (error != kAudioServicesNoError) {
+            NSLog(@"AudioServicesCreateSystemSoundID error == %ld", error);
+        }
+        filename = [bundle pathForResource: @"Rifle" ofType: @"mp3"];
+        //NSLog(@"filename == \"%@\"", filename);
+        
+        url = [NSURL fileURLWithPath: filename isDirectory: NO];
+        //NSLog(@"url == \"%@\"", url);
+        
+        error = AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &sid3);
+        if (error != kAudioServicesNoError) {
+            NSLog(@"AudioServicesCreateSystemSoundID error == %ld", error);
+        }
+        filename = [bundle pathForResource: @"bomb" ofType: @"mp3"];
+        //NSLog(@"filename == \"%@\"", filename);
+        
+        url = [NSURL fileURLWithPath: filename isDirectory: NO];
+        //NSLog(@"url == \"%@\"", url);
+        
+        error = AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &sid4);
+        if (error != kAudioServicesNoError) {
+            NSLog(@"AudioServicesCreateSystemSoundID error == %ld", error);
+        }
 
+        soundId = 2;
         displayImages = [NSDictionary dictionaryWithObjectsAndKeys:
                         [UIImage imageNamed:@"max.jpg"],@"max",
                         [UIImage imageNamed:@"austin.jpg"],@"austin",
@@ -192,13 +294,13 @@
                         [UIImage imageNamed:@"spy.png"],@"spy",
                         [UIImage imageNamed:@"flintlock.jpg"],@"flint",
                         [UIImage imageNamed:@"bond.jpg"],@"bond",
-                         [UIImage imageNamed:@"bazooka.jpg"],@"baz",
-                         [UIImage imageNamed:@"rambo.jpg"],@"rambo",
-                         [UIImage imageNamed:@"laser.jpg"],@"laser",
-                         [UIImage imageNamed:@"James-Bond.jpg"],@"bigBond",
-                           [UIImage imageNamed:@"bigbomb.jpg"],@"bigBomb",
-                           [UIImage imageNamed:@"images.jpg"],@"image",
-                                                 nil
+                        [UIImage imageNamed:@"bazooka.jpg"],@"baz",
+                        [UIImage imageNamed:@"rambo.jpg"],@"rambo",
+                        [UIImage imageNamed:@"laser.jpg"],@"laser",
+                        [UIImage imageNamed:@"James-Bond.jpg"],@"bigBond",
+                        [UIImage imageNamed:@"bigbomb.jpg"],@"bigBomb",
+                        [UIImage imageNamed:@"images.jpg"],@"image",
+                        nil
                         ];
 
         
@@ -211,7 +313,7 @@
 		[button setTitleColor: [UIColor redColor] forState: UIControlStateNormal];
 		[button setTitle: @" GO " forState: UIControlStateNormal];
         
-		[button addTarget: [UIApplication sharedApplication].delegate
+		[button addTarget: self // [UIApplication sharedApplication].delegate
                      action: @selector(buttonPressed:)
            forControlEvents: UIControlEventTouchUpInside
          ];

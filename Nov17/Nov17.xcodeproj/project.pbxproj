@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41ECB891474E11300052C19 /* Rifle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A41ECB881474E11300052C19 /* Rifle.mp3 */; };
 		A4256568147215E6006B6072 /* fred.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4256567147215E6006B6072 /* fred.jpg */; };
 		A425656A1472161F006B6072 /* austin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A42565691472161F006B6072 /* austin.jpg */; };
 		A425656C14721676006B6072 /* max.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A425656B14721676006B6072 /* max.jpg */; };
@@ -52,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A41ECB881474E11300052C19 /* Rifle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rifle.mp3; sourceTree = "<group>"; };
 		A4256567147215E6006B6072 /* fred.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fred.jpg; sourceTree = "<group>"; };
 		A42565691472161F006B6072 /* austin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = austin.jpg; sourceTree = "<group>"; };
 		A425656B14721676006B6072 /* max.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = max.jpg; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 		A44C69A5146DF9C800E6E60B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A41ECB881474E11300052C19 /* Rifle.mp3 */,
 				A433648E1474D2B20010DC74 /* grenade.mp3 */,
 				A433648F1474D2B20010DC74 /* bomb.mp3 */,
 				A43364901474D2B20010DC74 /* laser.mp3 */,
@@ -293,6 +296,7 @@
 				A43364931474D2B20010DC74 /* bomb.mp3 in Resources */,
 				A43364941474D2B20010DC74 /* laser.mp3 in Resources */,
 				A43364951474D2B20010DC74 /* gun.mp3 in Resources */,
+				A41ECB891474E11300052C19 /* Rifle.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

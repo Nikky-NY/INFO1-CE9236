@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface N17topViewBack : UIView {
     UIButton *button;
@@ -19,9 +19,18 @@
     NSDictionary * displayImages;
     UILabel *topLabel;
     UILabel *downLabel;
+          SystemSoundID sid, sid1, sid2,sid3, sid4;
+    NSInteger soundId;
   
     
 }
+enum {
+    GRENADE,
+    LASER,
+    GUN,
+    RIFLE,
+    BOMB
+};
 -(void) selectTheDisplay:(NSInteger) indice;
 
 
