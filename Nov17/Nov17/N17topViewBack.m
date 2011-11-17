@@ -112,10 +112,7 @@
     }   
 }
 
--(void)buttonPressed: (id) sender {
-    NSLog(@"Koi ?");
-    AudioServicesPlaySystemSound(sid);
-}
+
 
 -(void) switchValueChanged: (id) sender {
       NSLog(@"switchValueChanged");
@@ -186,41 +183,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        NSBundle *bundle = [NSBundle mainBundle];
-        NSLog(@"bundle.bundlePath == \"%@\"", bundle.bundlePath);	
-        
-        NSString *filename = [bundle pathForResource: @"grenade" ofType: @"mp3"];
-        //NSLog(@"filename == \"%@\"", filename);
-        
-        NSURL *url = [NSURL fileURLWithPath: filename isDirectory: NO];
-        //NSLog(@"url == \"%@\"", url);
-        
-        OSStatus error = AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &sid);
-        if (error != kAudioServicesNoError) {
-            NSLog(@"AudioServicesCreateSystemSoundID error == %ld", error);
-        }
-        
-       filename = [bundle pathForResource: @"laser" ofType: @"mp3"];
-       // NSLog(@"filename == \"%@\"", filename);
-        
-        url = [NSURL fileURLWithPath: filename isDirectory: NO];
-        //NSLog(@"url == \"%@\"", url);
-        
-        error = AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &sid1);
-        if (error != kAudioServicesNoError) {
-            NSLog(@"AudioServicesCreateSystemSoundID error == %ld", error);
-        }
-        filename = [bundle pathForResource: @"gun" ofType: @"mp3"];
-        //NSLog(@"filename == \"%@\"", filename);
-        
-        url = [NSURL fileURLWithPath: filename isDirectory: NO];
-        //NSLog(@"url == \"%@\"", url);
-        
-        error = AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &sid2);
-        if (error != kAudioServicesNoError) {
-            NSLog(@"AudioServicesCreateSystemSoundID error == %ld", error);
-        }
-
+       
 
         displayImages = [NSDictionary dictionaryWithObjectsAndKeys:
                         [UIImage imageNamed:@"max.jpg"],@"max",
@@ -248,7 +211,7 @@
 		[button setTitleColor: [UIColor redColor] forState: UIControlStateNormal];
 		[button setTitle: @" GO " forState: UIControlStateNormal];
         
-		[button addTarget: self //[UIApplication sharedApplication].delegate
+		[button addTarget: [UIApplication sharedApplication].delegate
                      action: @selector(buttonPressed:)
            forControlEvents: UIControlEventTouchUpInside
          ];

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AudioToolbox/AudioToolbox.h>
+
 
 @interface N17topViewBack : UIView {
     UIButton *button;
@@ -19,7 +19,7 @@
     NSDictionary * displayImages;
     UILabel *topLabel;
     UILabel *downLabel;
-    SystemSoundID sid, sid1, sid2,sid3;
+  
     
 }
 -(void) selectTheDisplay:(NSInteger) indice;

@@ -56,6 +56,42 @@
      ];
 */
     
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSLog(@"bundle.bundlePath == \"%@\"", bundle.bundlePath);	
+    
+    NSString *filename = [bundle pathForResource: @"grenade" ofType: @"mp3"];
+    //NSLog(@"filename == \"%@\"", filename);
+    
+    NSURL *url = [NSURL fileURLWithPath: filename isDirectory: NO];
+    //NSLog(@"url == \"%@\"", url);
+    
+    OSStatus error = AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &sid);
+    if (error != kAudioServicesNoError) {
+        NSLog(@"AudioServicesCreateSystemSoundID error == %ld", error);
+    }
+    
+    /*filename = [bundle pathForResource: @"laser" ofType: @"mp3"];
+    // NSLog(@"filename == \"%@\"", filename);
+    
+    url = [NSURL fileURLWithPath: filename isDirectory: NO];
+    //NSLog(@"url == \"%@\"", url);
+    
+    error = AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &sid1);
+    if (error != kAudioServicesNoError) {
+        NSLog(@"AudioServicesCreateSystemSoundID error == %ld", error);
+    }
+    filename = [bundle pathForResource: @"gun" ofType: @"mp3"];
+    //NSLog(@"filename == \"%@\"", filename);
+    
+    url = [NSURL fileURLWithPath: filename isDirectory: NO];
+    //NSLog(@"url == \"%@\"", url);
+    
+    error = AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &sid2);
+    if (error != kAudioServicesNoError) {
+        NSLog(@"AudioServicesCreateSystemSoundID error == %ld", error);
+    }
+*/
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -69,6 +105,11 @@
     
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)buttonPressed: (id) sender {
+    NSLog(@"Koi ?");
+    AudioServicesPlaySystemSound(sid);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
