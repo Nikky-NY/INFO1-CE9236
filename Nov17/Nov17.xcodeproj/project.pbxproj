@@ -25,6 +25,11 @@
 		A43364891474C9DA0010DC74 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43364881474C9DA0010DC74 /* MediaPlayer.framework */; };
 		A433648B1474CC5E0010DC74 /* MI.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A433648A1474CC5E0010DC74 /* MI.mp4 */; };
 		A433648D1474CEB50010DC74 /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A433648C1474CEB50010DC74 /* images.jpg */; };
+		A43364921474D2B20010DC74 /* grenade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A433648E1474D2B20010DC74 /* grenade.mp3 */; };
+		A43364931474D2B20010DC74 /* bomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A433648F1474D2B20010DC74 /* bomb.mp3 */; };
+		A43364941474D2B20010DC74 /* laser.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A43364901474D2B20010DC74 /* laser.mp3 */; };
+		A43364951474D2B20010DC74 /* gun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A43364911474D2B20010DC74 /* gun.mp3 */; };
+		A43364971474D3870010DC74 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43364961474D3870010DC74 /* AudioToolbox.framework */; };
 		A44C699F146DF9C800E6E60B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44C699E146DF9C800E6E60B /* UIKit.framework */; };
 		A44C69A1146DF9C800E6E60B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44C69A0146DF9C800E6E60B /* Foundation.framework */; };
 		A44C69A3146DF9C800E6E60B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44C69A2146DF9C800E6E60B /* CoreGraphics.framework */; };
@@ -65,6 +70,11 @@
 		A43364881474C9DA0010DC74 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		A433648A1474CC5E0010DC74 /* MI.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MI.mp4; sourceTree = "<group>"; };
 		A433648C1474CEB50010DC74 /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpg; sourceTree = "<group>"; };
+		A433648E1474D2B20010DC74 /* grenade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = grenade.mp3; sourceTree = "<group>"; };
+		A433648F1474D2B20010DC74 /* bomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bomb.mp3; sourceTree = "<group>"; };
+		A43364901474D2B20010DC74 /* laser.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = laser.mp3; sourceTree = "<group>"; };
+		A43364911474D2B20010DC74 /* gun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gun.mp3; sourceTree = "<group>"; };
+		A43364961474D3870010DC74 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A44C699A146DF9C800E6E60B /* Nov17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nov17.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44C699E146DF9C800E6E60B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A44C69A0146DF9C800E6E60B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43364971474D3870010DC74 /* AudioToolbox.framework in Frameworks */,
 				A43364891474C9DA0010DC74 /* MediaPlayer.framework in Frameworks */,
 				A44C699F146DF9C800E6E60B /* UIKit.framework in Frameworks */,
 				A44C69A1146DF9C800E6E60B /* Foundation.framework in Frameworks */,
@@ -132,6 +143,7 @@
 		A44C699D146DF9C800E6E60B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A43364961474D3870010DC74 /* AudioToolbox.framework */,
 				A43364881474C9DA0010DC74 /* MediaPlayer.framework */,
 				A44C699E146DF9C800E6E60B /* UIKit.framework */,
 				A44C69A0146DF9C800E6E60B /* Foundation.framework */,
@@ -167,6 +179,10 @@
 		A44C69A5146DF9C800E6E60B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A433648E1474D2B20010DC74 /* grenade.mp3 */,
+				A433648F1474D2B20010DC74 /* bomb.mp3 */,
+				A43364901474D2B20010DC74 /* laser.mp3 */,
+				A43364911474D2B20010DC74 /* gun.mp3 */,
 				A433648C1474CEB50010DC74 /* images.jpg */,
 				A433648A1474CC5E0010DC74 /* MI.mp4 */,
 				A43364821474C2540010DC74 /* camera-icon.png */,
@@ -273,6 +289,10 @@
 				A43364871474C2540010DC74 /* QuestionMarkBlack.png in Resources */,
 				A433648B1474CC5E0010DC74 /* MI.mp4 in Resources */,
 				A433648D1474CEB50010DC74 /* images.jpg in Resources */,
+				A43364921474D2B20010DC74 /* grenade.mp3 in Resources */,
+				A43364931474D2B20010DC74 /* bomb.mp3 in Resources */,
+				A43364941474D2B20010DC74 /* laser.mp3 in Resources */,
+				A43364951474D2B20010DC74 /* gun.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
