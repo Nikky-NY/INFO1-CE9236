@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 
-@interface NYUViewT : UIView
+@interface NYUViewT : UIView 
 
 @end

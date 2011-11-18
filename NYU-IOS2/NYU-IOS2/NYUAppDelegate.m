@@ -47,7 +47,7 @@
     self.tabBarController.tabBar.selectedImageTintColor =[UIColor redColor];
     //self.tabBarController.tabBar.backgroundImage = image; // [UIColor redColor];
     self.tabBarController.tabBar.alpha =0.5;
-    self.tabBarController.tabBar.selectionIndicatorImage = image2;
+    //self.tabBarController.tabBar.selectionIndicatorImage = image2;
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     
