@@ -17,6 +17,26 @@
     NSLog(@" SUPERVIEW buttonPressed");
     
 }
+
+
+-(void)moveToFrontView{
+    NSInteger nextIndex = 0;
+    NSLog(@"index %d", index);
+    if (index == 0) { nextIndex = 1;}
+    else {
+        nextIndex = 0;
+        [UIView transitionFromView: [views objectAtIndex: index]
+                            toView: [views objectAtIndex: nextIndex]
+                          duration: 2.25
+                           options: UIViewAnimationOptionTransitionFlipFromLeft
+                        completion: NULL
+         ];
+        index = nextIndex;
+        nextIndex = 1;
+    }
+    
+    index = nextIndex;
+}
 -(void)selectTheTopView:(NSInteger) indice {
     NSLog(@"Indice = %d", indice);
     NSInteger nextIndex = 0;

@@ -7,6 +7,7 @@
 //
 
 #import "N17topViewBack.h"
+#import "N17topView.h"
 
 
 @implementation N17topViewBack
@@ -43,6 +44,7 @@
             [button setTitle: @"HIDE" forState: UIControlStateNormal];
             soundId = GUN;
              [button setEnabled:YES];
+            [controller.view setHidden:YES];
 
             break;
         case 1:
@@ -58,6 +60,7 @@
             [button setTitle: @"ZOOM" forState: UIControlStateNormal];
             soundId = GUN;
              [button setEnabled:YES];
+            [controller.view setHidden:YES];
             break;
         case 2 :
             [button setHidden:NO];
@@ -72,6 +75,7 @@
             [button setTitle: @"BLOW" forState: UIControlStateNormal];
             soundId = BOMB;
             [button setEnabled:NO];
+            [controller.view setHidden:YES];
 
             break;
         case 3 :
@@ -88,6 +92,7 @@
             [button setTitle: @"CALL" forState: UIControlStateNormal];
             soundId = DIAL;
              [button setEnabled:YES];
+            [controller.view setHidden:YES];
 
             break;
         case 4:
@@ -104,6 +109,23 @@
             [button setTitle: @"SHOOT" forState: UIControlStateNormal];
             soundId = RIFLE;
              [button setEnabled:YES];
+            [controller.view setHidden:YES];
+        case 5:
+            [button setHidden:NO];
+            [slider setHidden:YES];
+            [page setHidden: YES];
+            [segment setHidden:YES];
+            //[segment setSelectedSegmentIndex:0];
+            [sw setHidden:YES];
+            [topLabel setHidden:YES];
+            [downLabel setHidden:YES];
+            //image.image = [displayImages objectForKey: @"flint"];
+            //topLabel.text = @"Flint Lock Style !";
+            [image setHidden:YES];
+            [button setTitle: @"Play" forState: UIControlStateNormal];
+            soundId = PLAY;
+            [button setEnabled:YES];
+            [controller.view setHidden:NO];
 
 
             break;
@@ -120,6 +142,7 @@
             [button setTitle: @"KO" forState: UIControlStateNormal];
             soundId = GUN;
              [button setEnabled:YES];
+            [controller.view setHidden:YES];
             break;
     }   
 }
@@ -195,14 +218,11 @@
     
     image.transform = CGAffineTransformMakeScale(slider.value/2,slider.value/2);
                                             
-
-//    [image.image scale: f] ;
-  //  image.image.sca
 }
 
 
 -(void)buttonPressed: (id) sender {
-    NSLog(@"Koi ?");
+    NSLog(@"Koi ? %d", soundId);
     switch (soundId) {
         case GRENADE:
             AudioServicesPlaySystemSound(sid);
@@ -221,11 +241,15 @@
             break;
         case DIAL:
             AudioServicesPlaySystemSound(sid5);
+        case PLAY:
+            NSLog(@"PLAY");
+            [controller play];
             break;
         default:
             AudioServicesPlaySystemSound(sid2);
             break;
     }
+    [(N17topView *)self.superview moveToFrontView];
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -301,6 +325,40 @@
 
 
         soundId = 2;
+        
+        filename = [bundle pathForResource: @"MI" ofType: @"mp4"];
+        if (filename == nil) {
+            NSLog(@"could not find file MI.mp4");
+            //return YES;
+        }
+        
+        url = [NSURL fileURLWithPath: filename];
+        if (url == nil) {
+            NSLog(@"could not create URL for file %@", filename);
+            //return YES;
+        }
+        
+        controller = [[MPMoviePlayerController alloc] init];
+        if (controller == nil) {
+            NSLog(@"could not create MPMoviePlayerController");
+            //return YES;
+        }
+        
+        controller.scalingMode = MPMovieScalingModeAspectFit;//  MPMovieScalingModeNone;
+        controller.controlStyle = MPMovieControlStyleEmbedded;//   MPMovieControlStyleFullscreen;
+        controller.movieSourceType = MPMovieSourceTypeFile; //vs.stream
+        
+        CGRect viewInsetRect = CGRectInset ([self bounds],
+                                            10,
+                                            10 );
+        NSLog(@" %g %g %g %g", viewInsetRect.size.height, viewInsetRect.size.width, viewInsetRect.origin.x,viewInsetRect.origin.y );
+        // Inset the movie frame in the parent view frame.
+        
+        [[controller view] setFrame:viewInsetRect];
+        
+        [controller view].backgroundColor = [UIColor lightGrayColor];
+        [self addSubview: [controller view]]; 
+        
         displayImages = [NSDictionary dictionaryWithObjectsAndKeys:
                         [UIImage imageNamed:@"max.jpg"],@"max",
                         [UIImage imageNamed:@"austin.jpg"],@"austin",
@@ -379,7 +437,7 @@
 		[self addSubview: page];
         [self touchUpInside: page];
         
-        CGRect cgSegment = CGRectMake(40, 5, frame.size.width - 80, 30);
+        //CGRect cgSegment = CGRectMake(40, 5, frame.size.width - 80, 30);
         NSArray *items = [NSArray arrayWithObjects:
                           @"Flint",
                           @"Lazer",

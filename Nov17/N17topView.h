@@ -14,6 +14,7 @@
 }
 -(void)buttonPressed: (id) sender;
 -(void)selectTheTopView:(NSInteger) indice;
+-(void)moveToFrontView;
 
 
 @end
