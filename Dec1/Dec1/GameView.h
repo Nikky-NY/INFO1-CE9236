@@ -14,6 +14,9 @@
 	CGFloat dx, dy;	//direction and speed of ball's motion
     NSArray *life;
     NSMutableArray *wall;
+    NSInteger score;
+    NSInteger nblife;
+    UILabel *scoreLabel;
     
 }
 

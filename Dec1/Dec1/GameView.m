@@ -64,6 +64,22 @@
             [self addSubview:v];
         }
         
+        NSString *ptext =@"---0";
+        
+		UIFont *font = [UIFont italicSystemFontOfSize: 18];
+		//CGSize size = [text sizeWithFont: font];
+		
+		CGRect f = CGRectMake(200,480-38, 120,37);
+		scoreLabel = [[UILabel alloc] initWithFrame: f];
+		scoreLabel.font = font;
+		scoreLabel.backgroundColor = [UIColor clearColor];
+		scoreLabel.textColor = [UIColor blackColor];
+        scoreLabel.textAlignment = UITextAlignmentCenter;
+		scoreLabel.text = ptext;
+		[self addSubview: scoreLabel];
+        score = 0;
+        nblife =3;
+        
         
     }
     return self;
@@ -123,21 +139,20 @@
                     dx = -dx;
                     p = wall.count;
                     [v changeStatus];
+                    score += 10;
                 }
                 
                 if (CGRectIntersectsRect(vertical, v.frame)) {
                     dy = -dy;
                     [v changeStatus];
                      p = wall.count;
+                    score += 10;
                 }
             } 
         }
     }
-	
+	scoreLabel.text = [NSString stringWithFormat:@"%d",  score ];
 
-    
-    
-    
 }
 
 - (void) touchesMoved: (NSSet *) touches withEvent: (UIEvent *) event {
