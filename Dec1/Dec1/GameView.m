@@ -8,13 +8,15 @@
 
 #import "GameView.h"
 #import "TileView.h"
+#import "GameViewController.h"
 
 @implementation GameView
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame Controller :(GameViewController *) cont
 {
     self = [super initWithFrame:frame];
     if (self) {
+        viewController = cont;
         NSLog(@"GAMEVIEW initWithFrame" );
         // Initialization code
 		self.backgroundColor = [UIColor whiteColor];
@@ -26,7 +28,7 @@
 		[self addSubview: paddle];
         
 		//Create the ball in the upper left corner of this View.
-		frame = CGRectMake(150,480-38-22-37 , 30, 37);
+		frame = CGRectMake(150,480/2 , 30, 37);
         
 		ball = [[UIImageView alloc] initWithFrame: frame];
         ball.image = [UIImage imageNamed:@"Droid2.png"];
@@ -51,12 +53,13 @@
             [self addSubview:v];
         }
         wall = [[NSMutableArray alloc] init];
-        
+        appleNumber = 0;
         for (NSInteger xi=0; xi<10;xi++) {
             for (NSInteger yi=0; yi < 4; yi++) {
                 NSInteger imgIndice = rand()%7;
                 NSString *imgFileName =  [NSString stringWithFormat:@"Apple%d.png",  imgIndice ];
                 [wall addObject: [[TileView alloc] initWithFrame: CGRectMake(xi*32,yi*32,32,32) activated:YES image:imgFileName]];
+                appleNumber ++;
             }
 
         }
@@ -79,8 +82,23 @@
         scoreLabel.textAlignment = UITextAlignmentCenter;
 		scoreLabel.text = ptext;
 		[self addSubview: scoreLabel];
+        
+        f = CGRectMake(0,(480/2)-40, 320,40);
+		gameResult = [[UILabel alloc] initWithFrame: f];
+		gameResult.font = font;
+		gameResult.backgroundColor = [UIColor clearColor];
+		gameResult.textColor = [UIColor redColor];
+        gameResult.textAlignment = UITextAlignmentCenter;
+		//gameResult.text = ptext;
+        [gameResult setHidden:YES];
+		[self addSubview: gameResult];
+        
         score = 0;
-        nblife =3;
+        nblife =2;
+        
+        
+        
+        bottom = CGRectMake(0, 480-38, 320, 38);
         
         
     }
@@ -142,6 +160,7 @@
                     p = wall.count;
                     [v changeStatus];
                     score += 10;
+                    appleNumber --;
                 }
                 
                 if (CGRectIntersectsRect(vertical, v.frame)) {
@@ -149,11 +168,49 @@
                     [v changeStatus];
                      p = wall.count;
                     score += 10;
+                    appleNumber --;
                 }
             } 
         }
     }
 	scoreLabel.text = [NSString stringWithFormat:@"%d",  score ];
+    //If the ball is not currently intersecting the paddle,
+	if (!CGRectIntersectsRect(ball.frame, bottom)) {
+		
+		//but if the ball will intersect the paddle on the next move,
+		if (CGRectIntersectsRect(horizontal, bottom))  {
+            dx = -dx;
+            if (nblife >= 0) {
+                TileView *v = [life objectAtIndex:nblife];
+                [v setHidden:YES];
+                
+            }
+           nblife--;
+		}
+		
+		if (CGRectIntersectsRect(vertical, bottom)) {
+			dy = -dy;
+            if (nblife >= 0) {
+                TileView *v = [life objectAtIndex:nblife];
+                [v setHidden:YES];
+                
+            }
+            nblife--;
+		}
+	}
+    
+    if (appleNumber == 0) {
+        gameResult.text = @"YOU WIN !!";
+        [gameResult setHidden:NO];
+        [viewController stopLoop];
+        
+    }
+    
+    if (nblife < 0) {
+        gameResult.text = @"GAME OVER !!";
+        [gameResult setHidden:NO];
+        [viewController stopLoop];
+    }
 
 }
 

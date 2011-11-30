@@ -11,6 +11,11 @@
 
 @implementation GameViewController
 
+-(void) stopLoop {
+    NSRunLoop *loop = [NSRunLoop currentRunLoop];
+	[displayLink removeFromRunLoop: loop forMode: NSDefaultRunLoopMode];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -48,7 +53,8 @@
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView
 {
-	self.view = [[GameView alloc] initWithFrame: CGRectMake(0, 0, 320,480)];//[UIScreen mainScreen].applicationFrame];
+	self.view = [[GameView alloc] initWithFrame: CGRectMake(0, 0, 320,480) Controller: self];
+    //[UIScreen mainScreen].applicationFrame];
 }
 
 

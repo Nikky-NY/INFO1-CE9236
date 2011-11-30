@@ -13,4 +13,6 @@
   	CADisplayLink *displayLink;  
 }
 
+-(void) stopLoop;
+
 @end

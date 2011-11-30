@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class GameViewController;
 
 @interface GameView : UIView {
     UIView *paddle;
@@ -17,7 +18,14 @@
     NSInteger score;
     NSInteger nblife;
     UILabel *scoreLabel;
+    CGRect bottom;
+    NSInteger appleNumber;
+    UILabel * gameResult;
+    GameViewController *viewController;
     
 }
+
+
+- (id)initWithFrame:(CGRect)frame Controller :(GameViewController *) cont;
 
 @end
