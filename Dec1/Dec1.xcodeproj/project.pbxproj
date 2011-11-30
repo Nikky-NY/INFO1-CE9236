@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A43A97F81480124400CC9F97 /* Droid.png in Resources */ = {isa = PBXBuildFile; fileRef = A43A97EF1480124300CC9F97 /* Droid.png */; };
-		A43A97F91480124400CC9F97 /* Apple2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A43A97F01480124300CC9F97 /* Apple2.jpeg */; };
-		A43A97FA1480124400CC9F97 /* Apple3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A43A97F11480124300CC9F97 /* Apple3.jpeg */; };
 		A43A97FB1480124400CC9F97 /* Apple1.png in Resources */ = {isa = PBXBuildFile; fileRef = A43A97F21480124300CC9F97 /* Apple1.png */; };
-		A43A97FC1480124400CC9F97 /* Apple0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A43A97F31480124300CC9F97 /* Apple0.jpg */; };
 		A43A97FD1480124400CC9F97 /* Apple4.png in Resources */ = {isa = PBXBuildFile; fileRef = A43A97F41480124300CC9F97 /* Apple4.png */; };
 		A43A97FE1480124400CC9F97 /* Apple5.png in Resources */ = {isa = PBXBuildFile; fileRef = A43A97F51480124300CC9F97 /* Apple5.png */; };
 		A43A97FF1480124400CC9F97 /* Apple6.png in Resources */ = {isa = PBXBuildFile; fileRef = A43A97F61480124400CC9F97 /* Apple6.png */; };
@@ -34,14 +31,14 @@
 		A4BBDB6C147B46CA004DF4CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4BBDB6A147B46CA004DF4CE /* InfoPlist.strings */; };
 		A4BBDB6E147B46CA004DF4CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BBDB6D147B46CA004DF4CE /* main.m */; };
 		A4BBDB72147B46CA004DF4CE /* D1AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BBDB71147B46CA004DF4CE /* D1AppDelegate.m */; };
+		A4C579031485A7D5009EC95B /* Apple0.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C579021485A7D5009EC95B /* Apple0.png */; };
+		A4C579071485A7F5009EC95B /* Apple2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C579051485A7F5009EC95B /* Apple2.png */; };
+		A4C579081485A7F5009EC95B /* Apple3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C579061485A7F5009EC95B /* Apple3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A43A97EF1480124300CC9F97 /* Droid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Droid.png; sourceTree = "<group>"; };
-		A43A97F01480124300CC9F97 /* Apple2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Apple2.jpeg; sourceTree = "<group>"; };
-		A43A97F11480124300CC9F97 /* Apple3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Apple3.jpeg; sourceTree = "<group>"; };
 		A43A97F21480124300CC9F97 /* Apple1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple1.png; sourceTree = "<group>"; };
-		A43A97F31480124300CC9F97 /* Apple0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Apple0.jpg; sourceTree = "<group>"; };
 		A43A97F41480124300CC9F97 /* Apple4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple4.png; sourceTree = "<group>"; };
 		A43A97F51480124300CC9F97 /* Apple5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple5.png; sourceTree = "<group>"; };
 		A43A97F61480124400CC9F97 /* Apple6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple6.png; sourceTree = "<group>"; };
@@ -72,6 +69,9 @@
 		A4BBDB6F147B46CA004DF4CE /* Dec1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dec1-Prefix.pch"; sourceTree = "<group>"; };
 		A4BBDB70147B46CA004DF4CE /* D1AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D1AppDelegate.h; sourceTree = "<group>"; };
 		A4BBDB71147B46CA004DF4CE /* D1AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D1AppDelegate.m; sourceTree = "<group>"; };
+		A4C579021485A7D5009EC95B /* Apple0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apple0.png; path = "github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/Apple0.png"; sourceTree = "<group>"; };
+		A4C579051485A7F5009EC95B /* Apple2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apple2.png; path = "github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/Apple2.png"; sourceTree = "<group>"; };
+		A4C579061485A7F5009EC95B /* Apple3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apple3.png; path = "github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/github2/INFO1-CE9236/Dec1/Dec1/Apple3.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,15 +142,15 @@
 		A4BBDB68147B46CA004DF4CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4C579051485A7F5009EC95B /* Apple2.png */,
+				A4C579061485A7F5009EC95B /* Apple3.png */,
+				A4C579021485A7D5009EC95B /* Apple0.png */,
 				A43A981614834E3D00CC9F97 /* Game.png */,
 				A43A980A14834DD800CC9F97 /* icon.png */,
 				A43A980B14834DD800CC9F97 /* icon@2x.png */,
 				A43A9808148332FD00CC9F97 /* Droid2.png */,
 				A43A97EF1480124300CC9F97 /* Droid.png */,
-				A43A97F01480124300CC9F97 /* Apple2.jpeg */,
-				A43A97F11480124300CC9F97 /* Apple3.jpeg */,
 				A43A97F21480124300CC9F97 /* Apple1.png */,
-				A43A97F31480124300CC9F97 /* Apple0.jpg */,
 				A43A97F41480124300CC9F97 /* Apple4.png */,
 				A43A97F51480124300CC9F97 /* Apple5.png */,
 				A43A97F61480124400CC9F97 /* Apple6.png */,
@@ -214,10 +214,7 @@
 			files = (
 				A4BBDB6C147B46CA004DF4CE /* InfoPlist.strings in Resources */,
 				A43A97F81480124400CC9F97 /* Droid.png in Resources */,
-				A43A97F91480124400CC9F97 /* Apple2.jpeg in Resources */,
-				A43A97FA1480124400CC9F97 /* Apple3.jpeg in Resources */,
 				A43A97FB1480124400CC9F97 /* Apple1.png in Resources */,
-				A43A97FC1480124400CC9F97 /* Apple0.jpg in Resources */,
 				A43A97FD1480124400CC9F97 /* Apple4.png in Resources */,
 				A43A97FE1480124400CC9F97 /* Apple5.png in Resources */,
 				A43A97FF1480124400CC9F97 /* Apple6.png in Resources */,
@@ -229,6 +226,9 @@
 				A43A981314834E1900CC9F97 /* Default@2x.png in Resources */,
 				A43A981514834E2700CC9F97 /* Default.png in Resources */,
 				A43A981714834E3D00CC9F97 /* Game.png in Resources */,
+				A4C579031485A7D5009EC95B /* Apple0.png in Resources */,
+				A4C579071485A7F5009EC95B /* Apple2.png in Resources */,
+				A4C579081485A7F5009EC95B /* Apple3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
