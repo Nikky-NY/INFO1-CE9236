@@ -23,8 +23,9 @@
         
 		//Create the paddle.
 		frame = CGRectMake(100, 480-38-22, 100, 20);
-		paddle = [[UIView alloc] initWithFrame: frame];
-		paddle.backgroundColor = [UIColor blackColor];
+		paddle = [[UIImageView alloc] initWithFrame: frame];
+        paddle.image = [UIImage imageNamed:@"Barre.png"];
+		//paddle.backgroundColor = [UIColor blackColor];
 		[self addSubview: paddle];
         
 		//Create the ball in the upper left corner of this View.

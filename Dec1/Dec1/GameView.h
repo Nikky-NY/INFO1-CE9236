@@ -10,7 +10,7 @@
 @class GameViewController;
 
 @interface GameView : UIView {
-    UIView *paddle;
+    UIImageView *paddle;
 	UIImageView *ball;
 	CGFloat dx, dy;	//direction and speed of ball's motion
     NSArray *life;

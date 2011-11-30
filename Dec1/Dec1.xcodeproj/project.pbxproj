@@ -34,6 +34,7 @@
 		A4C579111485D4B7009EC95B /* Apple3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C5790E1485D4B7009EC95B /* Apple3.png */; };
 		A4C579121485D4B7009EC95B /* Apple2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C5790F1485D4B7009EC95B /* Apple2.png */; };
 		A4C579131485D4B7009EC95B /* Apple0.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C579101485D4B7009EC95B /* Apple0.png */; };
+		A4C5791D1485E5DD009EC95B /* Barre.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C5791C1485E5DD009EC95B /* Barre.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		A4C5790E1485D4B7009EC95B /* Apple3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple3.png; sourceTree = "<group>"; };
 		A4C5790F1485D4B7009EC95B /* Apple2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple2.png; sourceTree = "<group>"; };
 		A4C579101485D4B7009EC95B /* Apple0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple0.png; sourceTree = "<group>"; };
+		A4C5791C1485E5DD009EC95B /* Barre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barre.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		A4BBDB68147B46CA004DF4CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4C5791C1485E5DD009EC95B /* Barre.png */,
 				A4C5790E1485D4B7009EC95B /* Apple3.png */,
 				A4C5790F1485D4B7009EC95B /* Apple2.png */,
 				A4C579101485D4B7009EC95B /* Apple0.png */,
@@ -229,6 +232,7 @@
 				A4C579111485D4B7009EC95B /* Apple3.png in Resources */,
 				A4C579121485D4B7009EC95B /* Apple2.png in Resources */,
 				A4C579131485D4B7009EC95B /* Apple0.png in Resources */,
+				A4C5791D1485E5DD009EC95B /* Barre.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
