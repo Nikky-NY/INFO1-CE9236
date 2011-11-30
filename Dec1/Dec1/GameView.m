@@ -54,9 +54,7 @@
         
         for (NSInteger xi=0; xi<10;xi++) {
             for (NSInteger yi=0; yi < 4; yi++) {
-                NSInteger imgIndice = rand() % 7;
-                NSString *imgFileName =[NSString stringWithFormat:@"Apple%d.png",  imgIndice ];
-                [wall addObject: [[TileView alloc] initWithFrame: CGRectMake(xi*32,yi*32,32,32) activated:YES image:imgFileName]];
+                [wall addObject: [[TileView alloc] initWithFrame: CGRectMake(xi*32,yi*32,32,32) activated:YES image:@"Apple1.png"]];
             }
 
         }
