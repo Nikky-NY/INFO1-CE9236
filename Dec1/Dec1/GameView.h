@@ -12,7 +12,7 @@
 @interface GameView : UIView {
     UIImageView *paddle;
 	UIImageView *ball;
-	CGFloat dx, dy;	//direction and speed of ball's motion
+	NSInteger dx, dy;	//direction and speed of ball's motion
     NSArray *life;
     NSMutableArray *wall;
     NSInteger score;
@@ -25,6 +25,10 @@
     
 }
 
+@property (nonatomic, atomic) NSInteger dx;
+@property (nonatomic, atomic) NSInteger dy;
+
+-(void) setmyDx: (NSInteger) x Dy :(NSInteger) y;
 
 - (id)initWithFrame:(CGRect)frame Controller :(GameViewController *) cont;
 

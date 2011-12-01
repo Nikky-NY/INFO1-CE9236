@@ -11,18 +11,24 @@
 #import "GameViewController.h"
 
 @implementation GameView
+@synthesize dx, dy;
 
+-(void) setmyDx: (NSInteger) x Dy :(NSInteger) y{
+    dx = x;
+    dy = y;
+    
+}
 - (id)initWithFrame:(CGRect)frame Controller :(GameViewController *) cont
 {
     self = [super initWithFrame:frame];
     if (self) {
         viewController = cont;
-        NSLog(@"GAMEVIEW initWithFrame" );
+        NSLog(@"GAMEVIEW initWithFrame %.0g %.0g %g %g", frame.origin.x, frame.origin.y, frame.size.width, frame.size.height );
         // Initialization code
 		self.backgroundColor = [UIColor whiteColor];
         
 		//Create the paddle.
-		frame = CGRectMake(100, 480-38-22, 100, 20);
+		frame = CGRectMake(100, 480-38-22-40, 100, 20);
 		paddle = [[UIImageView alloc] initWithFrame: frame];
         paddle.image = [UIImage imageNamed:@"Barre.png"];
 		//paddle.backgroundColor = [UIColor blackColor];
@@ -39,9 +45,9 @@
 		dx = 2;
 		dy = 2;
         
-        CGRect life1 = CGRectMake(0, 480-38, 30, 37);
-        CGRect life2 = CGRectMake(38, 480-38, 30, 37);
-        CGRect life3 = CGRectMake(76, 480-38, 30, 37);
+        CGRect life1 = CGRectMake(0, 480-38-40, 30, 37);
+        CGRect life2 = CGRectMake(38, 480-38-40, 30, 37);
+        CGRect life3 = CGRectMake(76, 480-38-40, 30, 37);
         
         life = [NSArray arrayWithObjects:
                 [[TileView alloc] initWithFrame:life1 activated:YES image:@"Droid2.png"],
@@ -75,7 +81,7 @@
 		UIFont *font = [UIFont italicSystemFontOfSize: 18];
 		//CGSize size = [text sizeWithFont: font];
 		
-		CGRect f = CGRectMake(200,480-38, 120,37);
+		CGRect f = CGRectMake(200,480-38-40, 120,37);
 		scoreLabel = [[UILabel alloc] initWithFrame: f];
 		scoreLabel.font = font;
 		scoreLabel.backgroundColor = [UIColor clearColor];
@@ -99,7 +105,7 @@
         
         
         
-        bottom = CGRectMake(0, 480-38, 320, 38);
+        bottom = CGRectMake(0, 480-38-40, 320, 38);
         
         
     }

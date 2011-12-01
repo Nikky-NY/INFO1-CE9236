@@ -35,6 +35,8 @@
 		A4C579121485D4B7009EC95B /* Apple2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C5790F1485D4B7009EC95B /* Apple2.png */; };
 		A4C579131485D4B7009EC95B /* Apple0.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C579101485D4B7009EC95B /* Apple0.png */; };
 		A4C5791D1485E5DD009EC95B /* Barre.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C5791C1485E5DD009EC95B /* Barre.png */; };
+		A4C5792B14872FC4009EC95B /* SetUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C5792A14872FC3009EC95B /* SetUpViewController.m */; };
+		A4C5792E14872FE7009EC95B /* SetUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C5792D14872FE7009EC95B /* SetUpView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,10 @@
 		A4C5790F1485D4B7009EC95B /* Apple2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple2.png; sourceTree = "<group>"; };
 		A4C579101485D4B7009EC95B /* Apple0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple0.png; sourceTree = "<group>"; };
 		A4C5791C1485E5DD009EC95B /* Barre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barre.png; sourceTree = "<group>"; };
+		A4C5792914872FC3009EC95B /* SetUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUpViewController.h; sourceTree = "<group>"; };
+		A4C5792A14872FC3009EC95B /* SetUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUpViewController.m; sourceTree = "<group>"; };
+		A4C5792C14872FE7009EC95B /* SetUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUpView.h; sourceTree = "<group>"; };
+		A4C5792D14872FE7009EC95B /* SetUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUpView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,10 @@
 				A4772314147BD78C00D508DB /* GameViewController.m */,
 				A4772316147BDA8F00D508DB /* GameView.h */,
 				A4772317147BDA8F00D508DB /* GameView.m */,
+				A4C5792914872FC3009EC95B /* SetUpViewController.h */,
+				A4C5792A14872FC3009EC95B /* SetUpViewController.m */,
+				A4C5792C14872FE7009EC95B /* SetUpView.h */,
+				A4C5792D14872FE7009EC95B /* SetUpView.m */,
 				A43A98011481A8DD00CC9F97 /* TileView.h */,
 				A43A98021481A8DD00CC9F97 /* TileView.m */,
 				A4BBDB68147B46CA004DF4CE /* Supporting Files */,
@@ -249,6 +259,8 @@
 				A4772315147BD78C00D508DB /* GameViewController.m in Sources */,
 				A4772318147BDA8F00D508DB /* GameView.m in Sources */,
 				A43A98031481A8DD00CC9F97 /* TileView.m in Sources */,
+				A4C5792B14872FC4009EC95B /* SetUpViewController.m in Sources */,
+				A4C5792E14872FE7009EC95B /* SetUpView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

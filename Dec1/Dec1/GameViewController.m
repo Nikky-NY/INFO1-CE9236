@@ -12,8 +12,18 @@
 @implementation GameViewController
 
 -(void) stopLoop {
+      NSLog(@"STOP Loop");
     NSRunLoop *loop = [NSRunLoop currentRunLoop];
 	[displayLink removeFromRunLoop: loop forMode: NSDefaultRunLoopMode];
+}
+-(void) startLoop {
+    NSLog(@"Start Loop");
+    NSRunLoop *loop = [NSRunLoop currentRunLoop];
+    [displayLink addToRunLoop: loop forMode: NSDefaultRunLoopMode];    
+}
+
+-(void) updatedx: (NSInteger) x dy: (NSInteger) y {
+    [(GameView *)self.view setmyDx:x Dy:y];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -24,6 +34,7 @@
         NSLog(@"initWithNibName GameViewController");
         //self.view.backgroundColor = [UIColor blueColor];
         self.view.frame = CGRectMake(0, 0,320,480);
+        self.tabBarItem.title =@"Game";
     }
     return self;
 }
@@ -70,9 +81,10 @@
     
     //Call move: every time the display is refreshed.
     [displayLink setFrameInterval: 1];
-    
-    NSRunLoop *loop = [NSRunLoop currentRunLoop];
-    [displayLink addToRunLoop: loop forMode: NSDefaultRunLoopMode];
+    //[self startLoop];
+    //
+    //NSRunLoop *loop = [NSRunLoop currentRunLoop];
+    //[displayLink addToRunLoop: loop forMode: NSDefaultRunLoopMode];
 }
 
 - (void)viewDidUnload

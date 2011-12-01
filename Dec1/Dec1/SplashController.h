@@ -8,13 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #include "GameViewController.h"
+#include "SetUpViewController.h"
 
-@interface SplashController : UIViewController {
+@interface SplashController : UIViewController <UITabBarControllerDelegate>{
     
     NSTimer *timer;
     UIImageView *splashImageView;
     
     GameViewController *gameviewController;
+    UITabBarController *tabBarController;
+    
 }
 
 @property(nonatomic,retain) NSTimer *timer;

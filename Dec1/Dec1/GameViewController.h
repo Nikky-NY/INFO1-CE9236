@@ -14,5 +14,7 @@
 }
 
 -(void) stopLoop;
+-(void) startLoop;
+-(void) updatedx: (NSInteger) x dy: (NSInteger) y ;
 
 @end
